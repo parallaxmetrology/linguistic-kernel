@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use the Linguistic Kernel in research, please cite it as below."
+title: "Linguistic Kernel: deterministic structural measurement of text"
+type: software
+authors:
+  - family-names: Parrish
+    given-names: Russell
+    orcid: https://orcid.org/0009-0008-9781-7995
+version: "0.1.0"
+date-released: 2026-10-21
+license: MIT
+url: https://www.parallaxmetrology.com/linguistic_kernel_pm.html
+repository-code: https://github.com/parallaxmetrology/linguistic-kernel
+keywords: [llm evaluation, structural telemetry, deterministic metrics, text structure]
+abstract: >
+  A deterministic, model-free instrument that reduces a text to eight structural
+  coordinates (weight shift, void, packing, cohesion, segmentation strain,
+  peripheral pull, flow instability, structural thickness) with a countable
+  evidence bundle, rhetorical-state and collapse labels, and corpus tools for
+  fingerprints, comparison and drift envelopes. Wraps kernel v19.

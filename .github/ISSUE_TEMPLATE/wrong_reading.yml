@@ -1,0 +1,23 @@
+name: Wrong reading
+description: The numbers don't fit what the text is doing
+labels: [wrong-reading]
+body:
+  - type: textarea
+    id: text
+    attributes:
+      label: Text
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: Output of `lk measure --full`
+      render: json
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect, and why?
+    validations:
+      required: true

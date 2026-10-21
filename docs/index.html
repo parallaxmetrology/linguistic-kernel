@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Guess the Engine</title>
+<meta name="description" content="Same prompt, two answers. Which one is Claude, GPT or Gemini? Guess from the writing, then see what a deterministic text ruler would have guessed.">
+<meta property="og:title" content="Guess the Engine">
+<meta property="og:description" content="Same prompt, two answers. Which one is Claude? Can you beat a ruler that only counts words, commas and sentences?">
+<meta property="og:image" content="https://parallaxmetrology.github.io/linguistic-kernel/og-engine.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=DM+Mono:wght@400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0a0a0a; --surface: #111; --raised: #161616; --border: #1e1e1e; --border-light: #2a2a2a;
+    --text: #e8e4dc; --muted: #8a867f; --dim: #555;
+    --ling: #a993bd; --ling-dim: rgba(169,147,189,.12); --ling-border: rgba(169,147,189,.3);
+    --accent: #c4a882; --good: #8fb996; --bad: #e66e5a;
+    --mono: 'DM Mono', ui-monospace, monospace; --serif: 'Cormorant Garamond', Georgia, serif; --sans: 'DM Sans', system-ui, sans-serif;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  [hidden] { display: none !important; }
+  body { background: var(--bg); color: var(--text); font-family: var(--sans); font-weight: 300; line-height: 1.6; }
+  a { color: var(--ling); text-decoration: none; } a:hover { text-decoration: underline; }
+  .wrap { max-width: 1060px; margin: 0 auto; padding: 0 24px; }
+  header { border-bottom: 1px solid var(--border); }
+  header .wrap { display: flex; justify-content: space-between; align-items: center; height: 56px; gap: 16px; }
+  .logo { font-family: var(--mono); font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--ling); }
+  nav a { font-family: var(--mono); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin-left: 20px; }
+  .eyebrow { font-family: var(--mono); font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--ling); }
+  h1 { font-family: var(--serif); font-weight: 400; font-size: clamp(36px, 5.5vw, 58px); line-height: 1.05; margin: 10px 0 12px; }
+  h2 { font-family: var(--serif); font-weight: 400; font-size: 30px; line-height: 1.15; }
+  .lede { color: var(--muted); max-width: 640px; font-size: 17px; }
+  .lede b { color: var(--text); font-weight: 400; }
+  section { padding: 38px 0; }
+  button { font-family: var(--mono); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--text); background: transparent; border: 1px solid var(--border-light); border-radius: 4px; padding: 11px 16px; cursor: pointer; }
+  button:hover { border-color: var(--ling); color: var(--ling); }
+  button.primary { border-color: var(--ling-border); color: var(--ling); background: var(--ling-dim); }
+  .row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+  .how { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 14px 26px; margin-top: 30px; }
+  .how div { border-top: 1px solid var(--border); padding-top: 10px; font-size: 14px; color: var(--muted); }
+  .how b { display: block; font-family: var(--mono); font-weight: 400; font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--ling); margin-bottom: 4px; }
+
+  .hud { display: flex; justify-content: space-between; gap: 12px; font-family: var(--mono); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin-bottom: 14px; }
+  .hud .you { color: var(--good); } .hud .lens { color: var(--ling); }
+  .prompt { background: var(--surface); border: 1px solid var(--border); border-radius: 6px; padding: 14px 16px; margin-bottom: 14px; }
+  .prompt .k { font-family: var(--mono); font-size: 10px; letter-spacing: .12em; text-transform: uppercase; color: var(--dim); }
+  .question { font-family: var(--serif); font-size: 28px; margin: 6px 0 14px; }
+  .question em { color: var(--ling); font-style: normal; }
+  .pair { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .ans { background: var(--surface); border: 1px solid var(--border); border-radius: 6px; display: flex; flex-direction: column; min-width: 0; cursor: pointer; transition: border-color .15s; }
+  .ans:hover { border-color: var(--ling-border); }
+  .ans.picked { border-color: var(--ling); }
+  .ans.right { border-color: var(--good); } .ans.wrong { border-color: var(--bad); }
+  .ans .head { display: flex; justify-content: space-between; align-items: baseline; padding: 10px 14px; border-bottom: 1px solid var(--border); font-family: var(--mono); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+  .ans .who { color: var(--text); }
+  .ans .body { padding: 12px 14px; white-space: pre-wrap; overflow-wrap: anywhere; font-size: 14.5px; max-height: 340px; overflow: auto; color: #d6d2ca; }
+  .ans .read { border-top: 1px solid var(--border); padding: 10px 14px; font-size: 12px; }
+  .bar { display: grid; grid-template-columns: 92px 1fr 52px; gap: 8px; align-items: center; margin: 3px 0; font-family: var(--mono); font-size: 11px; color: var(--muted); }
+  .bar .t { height: 6px; background: var(--raised); border-radius: 3px; position: relative; overflow: hidden; }
+  .bar .f { position: absolute; top: 0; bottom: 0; left: 0; background: var(--ling); opacity: .8; border-radius: 3px; }
+  .bar .v { text-align: right; color: var(--text); }
+  .flag { margin-top: 6px; color: var(--accent); font-size: 12px; }
+  .verdict { margin: 16px 0 6px; font-size: 16px; }
+  .verdict b { font-weight: 400; }
+  .note { color: var(--muted); font-size: 14px; max-width: 760px; }
+
+  .sum-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 14px; margin: 20px 0; }
+  .stat { background: var(--surface); border: 1px solid var(--border); border-radius: 6px; padding: 16px; }
+  .stat .k { font-family: var(--mono); font-size: 10px; letter-spacing: .12em; text-transform: uppercase; color: var(--dim); }
+  .stat .v { font-family: var(--serif); font-size: 36px; line-height: 1.1; margin-top: 4px; }
+  .stat .n { font-size: 13px; color: var(--muted); }
+  .share { margin-top: 16px; background: var(--raised); border: 1px solid var(--border); border-radius: 6px; padding: 14px 16px; font-family: var(--mono); font-size: 12px; color: var(--muted); white-space: pre-wrap; }
+  .about { border-top: 1px solid var(--border); color: var(--muted); font-size: 14px; }
+  .about p + p { margin-top: 10px; }
+  .about b { color: var(--text); font-weight: 400; }
+  code { font-family: var(--mono); font-size: 12px; background: var(--raised); padding: 1px 5px; border-radius: 3px; color: var(--text); }
+  footer { border-top: 1px solid var(--border); padding: 24px 0 44px; color: var(--dim); font-size: 13px; }
+  @media (max-width: 760px) { .pair { grid-template-columns: 1fr; } nav a:not(:last-child) { display: none; } .wrap { padding: 0 16px; } }
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <span class="logo">Linguistic Kernel</span>
+  <nav><a href="https://www.parallaxmetrology.com/linguistic_kernel_pm.html">The kernel</a><a href="https://parallaxmetrology.github.io/visual-thinking-lens/weight/">Where's the weight?</a><a href="https://github.com/parallaxmetrology/linguistic-kernel">GitHub</a></nav>
+</div></header>
+
+<main class="wrap">
+  <section id="intro">
+    <div class="eyebrow">Text has shape · a guessing game</div>
+    <h1>Guess the engine</h1>
+    <p class="lede">Same prompt, two answers from two different models. <b>Which one is Claude? Which is GPT, which is Gemini?</b> Guess from the writing. Then see what a ruler would have guessed: a deterministic instrument that only counts words, sentences, commas and paragraphs, and never reads for meaning.</p>
+    <div class="row" style="margin-top:24px"><button class="primary" id="start">Play ten rounds</button></div>
+    <div class="how">
+      <div><b>You</b>Read both answers. Pick the one the question asks for.</div>
+      <div><b>The lens</b>Measures eight structural axes plus length, and guesses from how each engine usually writes. It never sees the round you're playing.</div>
+      <div><b>The catch</b>Claude is easy to spot. GPT vs Gemini is not, for you or for the lens.</div>
+    </div>
+  </section>
+
+  <section id="game" hidden>
+    <div class="hud"><span id="round">Round 1 of 10</span><span><span class="you" id="youscore">you 0</span> · <span class="lens" id="lensscore">lens 0</span></span></div>
+    <div class="prompt"><div class="k" id="ptype">Prompt</div><div id="ptext"></div></div>
+    <div class="question" id="question"></div>
+    <div class="pair">
+      <article class="ans" id="ansA" tabindex="0"><div class="head"><span class="who" id="whoA">Answer A</span><span id="tokA"></span></div><div class="body" id="bodyA"></div><div class="read" id="readA" hidden></div></article>
+      <article class="ans" id="ansB" tabindex="0"><div class="head"><span class="who" id="whoB">Answer B</span><span id="tokB"></span></div><div class="body" id="bodyB"></div><div class="read" id="readB" hidden></div></article>
+    </div>
+    <p class="verdict" id="verdict"></p>
+    <p class="note" id="explain"></p>
+    <div class="row" style="margin-top:14px"><button class="primary" id="next" hidden>Next round</button></div>
+  </section>
+
+  <section id="summary" hidden>
+    <div class="eyebrow">Ten rounds</div>
+    <h2 id="sumhead"></h2>
+    <div class="sum-grid" id="stats"></div>
+    <p class="note" id="sumnote"></p>
+    <div class="share" id="share"></div>
+    <div class="row" style="margin-top:14px"><button class="primary" id="copy">Copy result</button><button id="again">Play again</button></div>
+  </section>
+
+  <section class="about">
+    <p><b>Where the answers come from.</b> Claude, GPT and Gemini each answered the same 400 everyday, science and math prompts under a batch constraint (the EMS study, 1,200 answers). Every answer is shown exactly as returned, including the ones that were cut off.</p>
+    <p><b>What the lens is.</b> The open-source <a href="https://github.com/parallaxmetrology/linguistic-kernel">Linguistic Kernel</a> (v19) reduces a text to eight coordinates: weight shift, void, packing, cohesion, sentence length, rare-word pull, flow, clause thickness. Here it guesses by comparing each answer with each engine's average profile, built from the other 399 prompts. Across all 1,200 pairings it's right <span id="lensacc">82%</span> of the time; structure alone gets 67%, length alone 65%.</p>
+    <p>It isn't built to identify models. It measures structure, and under these prompts the engines happen to write differently enough to tell apart. Different prompts or newer model versions may land differently.</p>
+  </section>
+</main>
+<footer><div class="wrap">Parallax Metrology · <a href="https://www.parallaxmetrology.com">parallaxmetrology.com</a> · structure has geometry; measure it</div></footer>
+
+<script>
+const ROUNDS = 10;
+const AXES = [["tokens", "length"], ["delta_x", "Δx weight"], ["r_v", "rᵥ void"], ["rho_r", "ρᵣ packing"], ["mu", "μ cohesion"], ["delta_y", "Δy sentence"], ["x_p", "xₚ rare"], ["theta", "θ flow"], ["d_s", "dₛ clauses"]];
+const PAIRS = [["Claude", "GPT"], ["Claude", "Gemini"], ["GPT", "Gemini"]];
+const $ = (id) => document.getElementById(id);
+const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+let DATA, deck = [], i = 0, you = 0, lens = 0, log = [], cur = null, answered = false;
+
+const shuffle = (a) => { for (let k = a.length - 1; k > 0; k--) { const j = Math.floor(Math.random() * (k + 1)); [a[k], a[j]] = [a[j], a[k]]; } return a; };
+
+async function load() {
+  DATA = await (await fetch("game-data.json")).json();
+  $("lensacc").textContent = Math.round(DATA.lens_accuracy * 100) + "%";
+}
+
+function buildDeck() {
+  const prompts = shuffle(DATA.rounds.filter((r) => Object.values(r.answers).every((a) => a.text.trim().length > 0))).slice(0, ROUNDS);
+  // even mix of pairings, with the hard one (GPT vs Gemini) guaranteed a few times
+  const pairs = shuffle([0, 1, 2, 0, 1, 2, 0, 1, 2, 2].map((k) => PAIRS[k]));
+  return prompts.map((p, k) => {
+    const [e1, e2] = pairs[k];
+    const order = Math.random() < 0.5 ? [e1, e2] : [e2, e1];
+    const target = Math.random() < 0.5 ? e1 : e2;
+    return { p, order, target, pairKey: `${e1}|${e2}` };
+  });
+}
+
+function start() { deck = buildDeck(); i = 0; you = 0; lens = 0; log = []; $("intro").hidden = true; $("summary").hidden = true; $("game").hidden = false; show(); }
+
+function show() {
+  cur = deck[i]; answered = false;
+  const { p, order, target } = cur;
+  $("round").textContent = `Round ${i + 1} of ${deck.length}`;
+  $("youscore").textContent = `you ${you}`; $("lensscore").textContent = `lens ${lens}`;
+  $("ptype").textContent = `${p.type} prompt`;
+  $("ptext").textContent = p.prompt;
+  $("question").innerHTML = `Which one is <em>${target}</em>?`;
+  ["A", "B"].forEach((s, k) => {
+    const a = p.answers[order[k]];
+    $("who" + s).textContent = `Answer ${s}`; $("tok" + s).textContent = "";
+    $("body" + s).innerHTML = esc(a.text);
+    $("read" + s).hidden = true;
+    $("ans" + s).className = "ans";
+  });
+  $("verdict").textContent = ""; $("explain").textContent = ""; $("next").hidden = true;
+  window.scrollTo({ top: $("game").offsetTop - 10, behavior: "smooth" });
+}
+
+function bars(a) {
+  return AXES.map(([k, label]) => {
+    const [lo, hi] = DATA.ranges[k];
+    const v = a[k], f = Math.max(0.02, Math.min(1, (v - lo) / (hi - lo || 1)));
+    const shown = k === "tokens" ? v : (Math.abs(v) >= 10 ? v.toFixed(1) : v.toFixed(2));
+    return `<div class="bar"><span>${label}</span><span class="t"><span class="f" style="width:${(f * 100).toFixed(0)}%"></span></span><span class="v">${shown}</span></div>`;
+  }).join("");
+}
+
+function pick(side) {
+  if (answered) return;
+  answered = true;
+  const { p, order, target, pairKey } = cur;
+  const chosen = order[side === "A" ? 0 : 1];
+  const youRight = chosen === target;
+  // lens: true means it assigns both answers to their real engines
+  const lensRight = p.lens[pairKey];
+  if (youRight) you++; if (lensRight) lens++;
+  log.push({ pair: pairKey, youRight, lensRight });
+  ["A", "B"].forEach((s, k) => {
+    const eng = order[k], a = p.answers[eng];
+    $("who" + s).textContent = `${s} · ${eng}`; $("tok" + s).textContent = `${a.tokens} words`;
+    $("ans" + s).className = "ans " + (eng === target ? "right" : (s === side ? "wrong" : ""));
+    let flag = "";
+    if (a.truncated) flag = `<div class="flag">This answer was cut off. The kernel flagged it: ${a.state.replace(/_/g, " ")}${a.collapse !== "none" ? " (" + a.collapse + ")" : ""}.</div>`;
+    else if (a.state === "formatting_collapse") flag = `<div class="flag">The kernel flagged this as collapse, but it's a complete answer: short answers can trip it.</div>`;
+    $("read" + s).innerHTML = bars(a) + flag; $("read" + s).hidden = false;
+  });
+  const lensSide = lensRight ? (order[0] === target ? "A" : "B") : (order[0] === target ? "B" : "A");
+  $("verdict").innerHTML = `${youRight ? "<b style='color:var(--good)'>You got it.</b>" : "<b style='color:var(--bad)'>Not this time.</b>"} The lens picked <b>${lensSide}</b>, ${lensRight ? "and was right" : "and was wrong"}.`;
+  const [e1, e2] = pairKey.split("|");
+  const A = p.answers[e1], B = p.answers[e2];
+  const longer = A.tokens > B.tokens ? e1 : e2;
+  $("explain").textContent = e1 === "Claude" || e2 === "Claude"
+    ? `Claude usually writes about twice as long under these prompts (here ${longer} wrote more). Length is a big tell, but the shape bars matter too.`
+    : `GPT vs Gemini is the hard pairing: the lens gets it ${Math.round(DATA.lens_pairs["GPT vs Gemini"] * 100)}% of the time. Both write short; compare packing, sentence length and clause thickness.`;
+  $("youscore").textContent = `you ${you}`; $("lensscore").textContent = `lens ${lens}`;
+  $("next").hidden = false;
+  $("next").textContent = i + 1 < deck.length ? "Next round" : "See results";
+}
+
+function summary() {
+  $("game").hidden = true; $("summary").hidden = false;
+  const verdict = you > lens ? "You beat the ruler." : you === lens ? "A tie with the ruler." : "The ruler wins this one.";
+  $("sumhead").textContent = `You ${you} · Lens ${lens} — ${verdict}`;
+  const by = {};
+  for (const r of log) { const k = r.pair.replace("|", " vs "); by[k] = by[k] || [0, 0]; by[k][0] += r.youRight; by[k][1]++; }
+  const stat = (k, v, n) => `<div class="stat"><div class="k">${k}</div><div class="v">${v}</div><div class="n">${n}</div></div>`;
+  $("stats").innerHTML = stat("You", `${you}/${deck.length}`, "rounds right") + stat("The lens", `${lens}/${deck.length}`, `right ${Math.round(DATA.lens_accuracy * 100)}% over all 1,200 pairings`)
+    + Object.entries(by).map(([k, [a, n]]) => stat(k, `${a}/${n}`, "your rounds")).join("");
+  $("sumnote").textContent = "The lens never reads for meaning. It counts: how long, how front-loaded, how packed with content words, how many commas and clauses, how much sentences repeat each other's words. Under these prompts that's enough to tell Claude apart almost every time, and GPT from Gemini a bit better than a coin flip.";
+  $("share").textContent = `Guess the Engine: me ${you}/${deck.length} vs the ruler ${lens}/${deck.length}\n${location.href.split("#")[0]}`;
+}
+
+$("start").addEventListener("click", start);
+$("again").addEventListener("click", start);
+$("ansA").addEventListener("click", () => pick("A")); $("ansB").addEventListener("click", () => pick("B"));
+$("ansA").addEventListener("keydown", (e) => { if (e.key === "Enter") pick("A"); });
+$("ansB").addEventListener("keydown", (e) => { if (e.key === "Enter") pick("B"); });
+document.addEventListener("keydown", (e) => { if (!$("game").hidden && !answered && (e.key === "a" || e.key === "b")) pick(e.key.toUpperCase()); });
+$("next").addEventListener("click", () => { i++; i < deck.length ? show() : summary(); });
+$("copy").addEventListener("click", async () => {
+  try { await navigator.clipboard.writeText($("share").textContent); $("copy").textContent = "Copied"; } catch { $("copy").textContent = "Select and copy above"; }
+  setTimeout(() => ($("copy").textContent = "Copy result"), 1800);
+});
+load();
+</script>
+</body>
+</html>

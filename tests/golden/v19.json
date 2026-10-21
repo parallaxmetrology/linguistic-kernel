@@ -1,0 +1,3271 @@
+{
+ "Claude-152": {
+  "aux": {
+   "dₛ": 0.8974358974358975,
+   "xₚ": 0.4159963445079287,
+   "Δy": -0.3809523809523809,
+   "θ": 0.8093225807541338
+  },
+  "basin": "B0_centered_compact",
+  "basin_raw": "B0_centered_compact",
+  "basin_z": null,
+  "detail": {
+   "dₛ": {
+    "punct": 7,
+    "raw": 0.1076923076923077,
+    "subs": 0
+   },
+   "rᵥ": {
+    "avg_sent_len": 9.285714285714286,
+    "bullet_norm": 0.0,
+    "bullets": 0,
+    "inv_len_norm": 0.9243697478991596,
+    "para_norm": 0.3846153846153846,
+    "paragraphs": 1,
+    "short_norm": 0.9523809523809523,
+    "short_prop": 0.5714285714285714
+   },
+   "xₚ": {
+    "met": 0,
+    "met_rate": 0.0,
+    "rare_ratio": 0.1231,
+    "rare_words": 8,
+    "tech": 0
+   },
+   "Δx": {
+    "centroid": 0.49316014056224905,
+    "weights": [
+     0.5,
+     0.45454545454545453,
+     0.3333333333333333,
+     0.5,
+     0.5,
+     0.3076923076923077,
+     0.5
+    ]
+   },
+   "Δy": {
+    "avg_sent_len": 9.285714285714286,
+    "segmentation_strain": -0.381
+   },
+   "θ": {
+    "adj_cos_mean": 0.19067741924586626,
+    "sims": [
+     0.0,
+     0.4001633653325206,
+     0.23570226039551587,
+     0.25,
+     0.2581988897471611,
+     0.0
+    ]
+   },
+   "μ": {
+    "r_rate": 0.0,
+    "refs": 0,
+    "t_rate": 0.0,
+    "transitions": 0
+   },
+   "ρᵣ": {
+    "content": 25,
+    "stop": 28
+   }
+  },
+  "evidence": {
+   "adjacent_cosine_mean": 0.19067741924586626,
+   "bullet_line_count": 0,
+   "collapse_subtype": "none",
+   "constraint_basis": "none",
+   "content_word_count": 25,
+   "contrast_basis": "token",
+   "contrast_marker_hits": 2,
+   "contrast_per_100_tokens": 3.077,
+   "ds_per_100_tokens": 10.769,
+   "math_expression_tail_flag": false,
+   "metaphor_hits": 0,
+   "paragraph_count": 1,
+   "punctuation_clause_markers": 7,
+   "reference_pronouns_count": 0,
+   "rhetorical_state": "dialectic",
+   "seg_basis": "punct",
+   "segmentation_reliable": true,
+   "sentence_count": 7,
+   "stopword_count": 28,
+   "subordinator_hits": 0,
+   "subordinators_per_100_tokens": 0.0,
+   "tail_incomplete_flag": false,
+   "technical_hits": 0,
+   "tiktoken_token_count": 113,
+   "token_count": 65,
+   "transitions_count": 0
+  },
+  "flags": [],
+  "kernel": {
+   "rᵥ": 0.5383538030596854,
+   "Δx": -0.00683985943775095,
+   "μ": 0.46257015465625045,
+   "ρᵣ": 0.38461538461538464
+  },
+  "meta": {
+   "kernel_version": "lang-kernel-rebuild-v19",
+   "length_norm_factor": {
+    "avg_sentence_length": 9.29,
+    "bpe_to_word_ratio": 1.738,
+    "effective_token_count": 65,
+    "sentence_count": 7,
+    "tiktoken_token_count": 113
+   },
+   "numbers_off": false,
+   "positioning": "observational structural telemetry; all geometric language refers to induced structure in feature space only",
+   "prompt": "Statement 1 | A factor group of a non-Abelian group is non-Abelian. Statement 2 | If K is a normal subgroup of H and H is a normal subgroup of G, then K is a normal subgroup of G.",
+   "prompt_family_id": null,
+   "tiktoken_encoding": "cl100k_base",
+   "tiktoken_version": "0.14.0"
+  },
+  "z": null
+ },
+ "Claude-199": {
+  "aux": {
+   "dₛ": 0.3968253968253968,
+   "xₚ": 0.41257433049699377,
+   "Δy": -0.3,
+   "θ": 0.8528147742547129
+  },
+  "basin": "B0_centered_compact",
+  "basin_raw": "B0_centered_compact",
+  "basin_z": null,
+  "detail": {
+   "dₛ": {
+    "punct": 4,
+    "raw": 0.047619047619047616,
+    "subs": 0
+   },
+   "rᵥ": {
+    "avg_sent_len": 10.5,
+    "bullet_norm": 0.0,
+    "bullets": 0,
+    "inv_len_norm": 0.8529411764705882,
+    "para_norm": 0.2976190476190476,
+    "paragraphs": 1,
+    "short_norm": 0.8333333333333334,
+    "short_prop": 0.5
+   },
+   "xₚ": {
+    "met": 0,
+    "met_rate": 0.0,
+    "rare_ratio": 0.119,
+    "rare_words": 10,
+    "tech": 0
+   },
+   "Δx": {
+    "centroid": 0.5198139725729727,
+    "weights": [
+     0.5,
+     0.75,
+     0.35294117647058826,
+     0.5454545454545454,
+     0.5,
+     0.6363636363636364,
+     0.6086956521739131,
+     0.6666666666666666
+    ]
+   },
+   "Δy": {
+    "avg_sent_len": 10.5,
+    "segmentation_strain": -0.3
+   },
+   "θ": {
+    "adj_cos_mean": 0.1471852257452871,
+    "sims": [
+     0.0,
+     0.4629100498862757,
+     0.1973855084879307,
+     0.0,
+     0.1386750490563073,
+     0.23132597278649614,
+     0.0
+    ]
+   },
+   "μ": {
+    "r_rate": 0.047619047619047616,
+    "refs": 4,
+    "t_rate": 0.0,
+    "transitions": 0
+   },
+   "ρᵣ": {
+    "content": 47,
+    "stop": 25
+   }
+  },
+  "evidence": {
+   "adjacent_cosine_mean": 0.1471852257452871,
+   "bullet_line_count": 0,
+   "collapse_subtype": "none",
+   "constraint_basis": "none",
+   "content_word_count": 47,
+   "contrast_basis": "token",
+   "contrast_marker_hits": 1,
+   "contrast_per_100_tokens": 1.19,
+   "ds_per_100_tokens": 4.762,
+   "math_expression_tail_flag": false,
+   "metaphor_hits": 0,
+   "paragraph_count": 1,
+   "punctuation_clause_markers": 4,
+   "reference_pronouns_count": 4,
+   "rhetorical_state": "assertive",
+   "seg_basis": "punct",
+   "segmentation_reliable": true,
+   "sentence_count": 8,
+   "stopword_count": 25,
+   "subordinator_hits": 0,
+   "subordinators_per_100_tokens": 0.0,
+   "tail_incomplete_flag": false,
+   "technical_hits": 0,
+   "tiktoken_token_count": 119,
+   "token_count": 84,
+   "transitions_count": 0
+  },
+  "flags": [],
+  "kernel": {
+   "rᵥ": 0.46820728291316527,
+   "Δx": 0.019813972572972682,
+   "μ": 0.5101176663238238,
+   "ρᵣ": 0.5595238095238095
+  },
+  "meta": {
+   "kernel_version": "lang-kernel-rebuild-v19",
+   "length_norm_factor": {
+    "avg_sentence_length": 10.5,
+    "bpe_to_word_ratio": 1.417,
+    "effective_token_count": 84,
+    "sentence_count": 8,
+    "tiktoken_token_count": 119
+   },
+   "numbers_off": false,
+   "positioning": "observational structural telemetry; all geometric language refers to induced structure in feature space only",
+   "prompt": "Statement 1 | Every solvable group is of prime-power order. Statement 2 | Every group of prime-power order is solvable.",
+   "prompt_family_id": null,
+   "tiktoken_encoding": "cl100k_base",
+   "tiktoken_version": "0.14.0"
+  },
+  "z": null
+ },
+ "Claude-252": {
+  "aux": {
+   "dₛ": 0.6642512077294686,
+   "xₚ": 0.48504069775411485,
+   "Δy": 2.066666666666667,
+   "θ": 0.4237016399898279
+  },
+  "basin": "B0_centered_compact",
+  "basin_raw": "B0_centered_compact",
+  "basin_z": null,
+  "detail": {
+   "dₛ": {
+    "punct": 11,
+    "raw": 0.07971014492753623,
+    "subs": 0
+   },
+   "rᵥ": {
+    "avg_sent_len": 46.0,
+    "bullet_norm": 0.0,
+    "bullets": 0,
+    "inv_len_norm": 0.0,
+    "para_norm": 0.1811594202898551,
+    "paragraphs": 1,
+    "short_norm": 0.0,
+    "short_prop": 0.0
+   },
+   "xₚ": {
+    "met": 0,
+    "met_rate": 0.0,
+    "rare_ratio": 0.2029,
+    "rare_words": 28,
+    "tech": 0
+   },
+   "Δx": {
+    "centroid": 0.5385264274179943,
+    "weights": [
+     0.4642857142857143,
+     0.5217391304347826,
+     0.5853658536585366
+    ]
+   },
+   "Δy": {
+    "avg_sent_len": 46.0,
+    "segmentation_strain": 2.0667
+   },
+   "θ": {
+    "adj_cos_mean": 0.5762983600101721,
+    "sims": [
+     0.6520924180445761,
+     0.5005043019757682
+    ]
+   },
+   "μ": {
+    "r_rate": 0.007246376811594203,
+    "refs": 1,
+    "t_rate": 0.0,
+    "transitions": 0
+   },
+   "ρᵣ": {
+    "content": 73,
+    "stop": 33
+   }
+  },
+  "evidence": {
+   "adjacent_cosine_mean": 0.5762983600101721,
+   "bullet_line_count": 0,
+   "collapse_subtype": "none",
+   "constraint_basis": "sentence_suppression",
+   "content_word_count": 73,
+   "contrast_basis": "none",
+   "contrast_marker_hits": 0,
+   "contrast_per_100_tokens": 0.0,
+   "ds_per_100_tokens": 7.971,
+   "math_expression_tail_flag": false,
+   "metaphor_hits": 0,
+   "paragraph_count": 1,
+   "punctuation_clause_markers": 11,
+   "reference_pronouns_count": 1,
+   "rhetorical_state": "complying_under_constraint",
+   "seg_basis": "none",
+   "segmentation_reliable": false,
+   "sentence_count": 3,
+   "stopword_count": 33,
+   "subordinator_hits": 0,
+   "subordinators_per_100_tokens": 0.0,
+   "tail_incomplete_flag": false,
+   "technical_hits": 0,
+   "tiktoken_token_count": 203,
+   "token_count": 138,
+   "transitions_count": 0
+  },
+  "flags": [
+   "short_sentence_count"
+  ],
+  "kernel": {
+   "rᵥ": 0.05434782608695653,
+   "Δx": 0.03852642741799428,
+   "μ": 0.46978324360712626,
+   "ρᵣ": 0.5289855072463768
+  },
+  "meta": {
+   "kernel_version": "lang-kernel-rebuild-v19",
+   "length_norm_factor": {
+    "avg_sentence_length": 46.0,
+    "bpe_to_word_ratio": 1.471,
+    "effective_token_count": 138,
+    "sentence_count": 3,
+    "tiktoken_token_count": 203
+   },
+   "numbers_off": false,
+   "positioning": "observational structural telemetry; all geometric language refers to induced structure in feature space only",
+   "prompt": "Explain all notation present in the following equation, which describes a two-body bound quantum system. Letters have been changed from the usual notation, to confound searching.\n A = B(1) B(2) + B(1) B(2) C A",
+   "prompt_family_id": null,
+   "tiktoken_encoding": "cl100k_base",
+   "tiktoken_version": "0.14.0"
+  },
+  "z": null
+ },
+ "Claude-325": {
+  "aux": {
+   "dₛ": 1.0,
+   "xₚ": 0.5204515459255147,
+   "Δy": 3.2,
+   "θ": 0.6084597801472718
+  },
+  "basin": "B0_centered_compact",
+  "basin_raw": "B0_centered_compact",
+  "basin_z": null,
+  "detail": {
+   "dₛ": {
+    "punct": 44,
+    "raw": 0.2328042328042328,
+    "subs": 0
+   },
+   "rᵥ": {
+    "avg_sent_len": 63.0,
+    "bullet_norm": 0.0,
+    "bullets": 0,
+    "inv_len_norm": 0.0,
+    "para_norm": 0.1322751322751323,
+    "paragraphs": 1,
+    "short_norm": 0.5555555555555556,
+    "short_prop": 0.3333333333333333
+   },
+   "xₚ": {
+    "met": 0,
+    "met_rate": 0.0,
+    "rare_ratio": 0.2434,
+    "rare_words": 46,
+    "tech": 0
+   },
+   "Δx": {
+    "centroid": 0.5152439024390244,
+    "weights": [
+     0.4556213017751479,
+     0.5,
+     0.5
+    ]
+   },
+   "Δy": {
+    "avg_sent_len": 63.0,
+    "segmentation_strain": 3.2
+   },
+   "θ": {
+    "adj_cos_mean": 0.3915402198527282,
+    "sims": [
+     0.5295341632869014,
+     0.253546276418555
+    ]
+   },
+   "μ": {
+    "r_rate": 0.015873015873015872,
+    "refs": 3,
+    "t_rate": 0.0,
+    "transitions": 0
+   },
+   "ρᵣ": {
+    "content": 87,
+    "stop": 35
+   }
+  },
+  "evidence": {
+   "adjacent_cosine_mean": 0.3915402198527282,
+   "bullet_line_count": 0,
+   "collapse_subtype": "none",
+   "constraint_basis": "none",
+   "content_word_count": 87,
+   "contrast_basis": "token",
+   "contrast_marker_hits": 2,
+   "contrast_per_100_tokens": 1.058,
+   "ds_per_100_tokens": 23.28,
+   "math_expression_tail_flag": false,
+   "metaphor_hits": 0,
+   "paragraph_count": 1,
+   "punctuation_clause_markers": 44,
+   "reference_pronouns_count": 3,
+   "rhetorical_state": "dialectic",
+   "seg_basis": "punct",
+   "segmentation_reliable": true,
+   "sentence_count": 3,
+   "stopword_count": 35,
+   "subordinator_hits": 0,
+   "subordinators_per_100_tokens": 0.0,
+   "tail_incomplete_flag": false,
+   "technical_hits": 0,
+   "tiktoken_token_count": 371,
+   "token_count": 189,
+   "transitions_count": 0
+  },
+  "flags": [
+   "short_sentence_count",
+   "wall_of_text"
+  ],
+  "kernel": {
+   "rᵥ": 0.17857142857142858,
+   "Δx": 0.015243902439024404,
+   "μ": 0.4783864931370242,
+   "ρᵣ": 0.4603174603174603
+  },
+  "meta": {
+   "kernel_version": "lang-kernel-rebuild-v19",
+   "length_norm_factor": {
+    "avg_sentence_length": 63.0,
+    "bpe_to_word_ratio": 1.963,
+    "effective_token_count": 189,
+    "sentence_count": 3,
+    "tiktoken_token_count": 371
+   },
+   "numbers_off": false,
+   "positioning": "observational structural telemetry; all geometric language refers to induced structure in feature space only",
+   "prompt": "How many of the following compounds will exhibit optical activity?\n \n\n (Z)-1-chloro-2-methylbut-1-ene\n (3aR,7aS,E)-8-(chloromethylene)hexahydro-4,7-methanoisobenzofuran-1,3-dione\n (2R,3S)-2,3-dimethylsuccinic acid\n (2R,3R)-2,3-dimethylsuccinic acid\n (R)-cyclohex-3-en-1-ol\n (1s,3s,5s)-cyclohexane-1,3,5-triol\n 1-cyclopentyl-3-methylbutan-1-one",
+   "prompt_family_id": null,
+   "tiktoken_encoding": "cl100k_base",
+   "tiktoken_version": "0.14.0"
+  },
+  "z": null
+ },
+ "Claude-4": {
+  "aux": {
+   "dₛ": 0.2380952380952381,
+   "xₚ": 0.38461624360881785,
+   "Δy": 0.16666666666666666,
+   "θ": 0.517618089381134
+  },
+  "basin": "B0_centered_compact",
+  "basin_raw": "B0_centered_compact",
+  "basin_z": null,
+  "detail": {
+   "dₛ": {
+    "punct": 1,
+    "raw": 0.02857142857142857,
+    "subs": 0
+   },
+   "rᵥ": {
+    "avg_sent_len": 17.5,
+    "bullet_norm": 0.0,
+    "bullets": 0,
+    "inv_len_norm": 0.4411764705882353,
+    "para_norm": 0.7142857142857143,
+    "paragraphs": 1,
+    "short_norm": 0.0,
+    "short_prop": 0.0
+   },
+   "xₚ": {
+    "met": 0,
+    "met_rate": 0.0,
+    "rare_ratio": 0.0857,
+    "rare_words": 3,
+    "tech": 0
+   },
+   "Δx": {
+    "centroid": 0.4782608695652174,
+    "weights": [
+     0.6363636363636364,
+     0.5833333333333334
+    ]
+   },
+   "Δy": {
+    "avg_sent_len": 17.5,
+    "segmentation_strain": 0.1667
+   },
+   "θ": {
+    "adj_cos_mean": 0.4823819106188661,
+    "sims": [
+     0.4823819106188661
+    ]
+   },
+   "μ": {
+    "r_rate": 0.0,
+    "refs": 0,
+    "t_rate": 0.0,
+    "transitions": 0
+   },
+   "ρᵣ": {
+    "content": 21,
+    "stop": 13
+   }
+  },
+  "evidence": {
+   "adjacent_cosine_mean": 0.4823819106188661,
+   "bullet_line_count": 0,
+   "collapse_subtype": "none",
+   "constraint_basis": "none",
+   "content_word_count": 21,
+   "contrast_basis": "none",
+   "contrast_marker_hits": 0,
+   "contrast_per_100_tokens": 0.0,
+   "ds_per_100_tokens": 2.857,
+   "math_expression_tail_flag": false,
+   "metaphor_hits": 0,
+   "paragraph_count": 1,
+   "punctuation_clause_markers": 1,
+   "reference_pronouns_count": 0,
+   "rhetorical_state": "assertive",
+   "seg_basis": "punct",
+   "segmentation_reliable": true,
+   "sentence_count": 2,
+   "stopword_count": 13,
+   "subordinator_hits": 0,
+   "subordinators_per_100_tokens": 0.0,
+   "tail_incomplete_flag": false,
+   "technical_hits": 0,
+   "tiktoken_token_count": 45,
+   "token_count": 35,
+   "transitions_count": 0
+  },
+  "flags": [
+   "short_sentence_count"
+  ],
+  "kernel": {
+   "rᵥ": 0.3025210084033613,
+   "Δx": -0.021739130434782594,
+   "μ": 0.46257015465625045,
+   "ρᵣ": 0.6
+  },
+  "meta": {
+   "kernel_version": "lang-kernel-rebuild-v19",
+   "length_norm_factor": {
+    "avg_sentence_length": 17.5,
+    "bpe_to_word_ratio": 1.286,
+    "effective_token_count": 35,
+    "sentence_count": 2,
+    "tiktoken_token_count": 45
+   },
+   "numbers_off": false,
+   "positioning": "observational structural telemetry; all geometric language refers to induced structure in feature space only",
+   "prompt": "what was the prison called in the green mile",
+   "prompt_family_id": null,
+   "tiktoken_encoding": "cl100k_base",
+   "tiktoken_version": "0.14.0"
+  },
+  "z": null
+ },
+ "Claude-75": {
+  "aux": {
+   "dₛ": 0.7575757575757577,
+   "xₚ": 0.3889285640945369,
+   "Δy": 0.4666666666666667,
+   "θ": 0.7999252736174991
+  },
+  "basin": "B0_centered_compact",
+  "basin_raw": "B0_centered_compact",
+  "basin_z": null,
+  "detail": {
+   "dₛ": {
+    "punct": 7,
+    "raw": 0.09090909090909091,
+    "subs": 1
+   },
+   "rᵥ": {
+    "avg_sent_len": 22.0,
+    "bullet_norm": 0.0,
+    "bullets": 0,
+    "inv_len_norm": 0.17647058823529413,
+    "para_norm": 0.2840909090909091,
+    "paragraphs": 1,
+    "short_norm": 0.4166666666666667,
+    "short_prop": 0.25
+   },
+   "xₚ": {
+    "met": 0,
+    "met_rate": 0.0,
+    "rare_ratio": 0.0909,
+    "rare_words": 8,
+    "tech": 0
+   },
+   "Δx": {
+    "centroid": 0.5541247678989124,
+    "weights": [
+     0.45454545454545453,
+     0.6190476190476191,
+     0.6,
+     0.72
+    ]
+   },
+   "Δy": {
+    "avg_sent_len": 22.0,
+    "segmentation_strain": 0.4667
+   },
+   "θ": {
+    "adj_cos_mean": 0.2000747263825009,
+    "sims": [
+     0.19145989526687088,
+     0.2932942300427066,
+     0.11547005383792516
+    ]
+   },
+   "μ": {
+    "r_rate": 0.0,
+    "refs": 0,
+    "t_rate": 0.011363636363636364,
+    "transitions": 1
+   },
+   "ρᵣ": {
+    "content": 55,
+    "stop": 30
+   }
+  },
+  "evidence": {
+   "adjacent_cosine_mean": 0.2000747263825009,
+   "bullet_line_count": 0,
+   "collapse_subtype": "none",
+   "constraint_basis": "none",
+   "content_word_count": 55,
+   "contrast_basis": "token",
+   "contrast_marker_hits": 1,
+   "contrast_per_100_tokens": 1.136,
+   "ds_per_100_tokens": 9.091,
+   "math_expression_tail_flag": false,
+   "metaphor_hits": 0,
+   "paragraph_count": 1,
+   "punctuation_clause_markers": 7,
+   "reference_pronouns_count": 0,
+   "rhetorical_state": "assertive",
+   "seg_basis": "punct",
+   "segmentation_reliable": true,
+   "sentence_count": 4,
+   "stopword_count": 30,
+   "subordinator_hits": 1,
+   "subordinators_per_100_tokens": 1.136,
+   "tail_incomplete_flag": false,
+   "technical_hits": 0,
+   "tiktoken_token_count": 109,
+   "token_count": 88,
+   "transitions_count": 1
+  },
+  "flags": [],
+  "kernel": {
+   "rᵥ": 0.22468805704099823,
+   "Δx": 0.05412476789891241,
+   "μ": 0.48523156976493365,
+   "ρᵣ": 0.625
+  },
+  "meta": {
+   "kernel_version": "lang-kernel-rebuild-v19",
+   "length_norm_factor": {
+    "avg_sentence_length": 22.0,
+    "bpe_to_word_ratio": 1.239,
+    "effective_token_count": 88,
+    "sentence_count": 4,
+    "tiktoken_token_count": 109
+   },
+   "numbers_off": false,
+   "positioning": "observational structural telemetry; all geometric language refers to induced structure in feature space only",
+   "prompt": "do you have to identify yourself to a police officer in pennsylvania",
+   "prompt_family_id": null,
+   "tiktoken_encoding": "cl100k_base",
+   "tiktoken_version": "0.14.0"
+  },
+  "z": null
+ },
+ "GPT-109": {
+  "aux": {
+   "dₛ": 0.3472222222222222,
+   "xₚ": 0.5262259093720687,
+   "Δy": 0.6,
+   "θ": 0.0
+  },
+  "basin": "B0_centered_compact",
+  "basin_raw": "B0_centered_compact",
+  "basin_z": null,
+  "detail": {
+   "dₛ": {
+    "punct": 1,
+    "raw": 0.041666666666666664,
+    "subs": 0
+   },
+   "rᵥ": {
+    "avg_sent_len": 24.0,
+    "bullet_norm": 0.0,
+    "bullets": 0,
+    "inv_len_norm": 0.058823529411764705,
+    "para_norm": 1.0,
+    "paragraphs": 1,
+    "short_norm": 0.0,
+    "short_prop": 0.0
+   },
+   "xₚ": {
+    "met": 0,
+    "met_rate": 0.0,
+    "rare_ratio": 0.25,
+    "rare_words": 6,
+    "tech": 0
+   },
+   "Δx": {
+    "centroid": 0.5,
+    "weights": [
+     1.0
+    ]
+   },
+   "Δy": {
+    "avg_sent_len": 24.0,
+    "segmentation_strain": 0.6
+   },
+   "θ": {
+    "adj_cos_mean": 1.0,
+    "sims": []
+   },
+   "μ": {
+    "r_rate": 0.0,
+    "refs": 0,
+    "t_rate": 0.0,
+    "transitions": 0
+   },
+   "ρᵣ": {
+    "content": 9,
+    "stop": 5
+   }
+  },
+  "evidence": {
+   "adjacent_cosine_mean": 1.0,
+   "bullet_line_count": 0,
+   "collapse_subtype": "math",
+   "constraint_basis": "math",
+   "content_word_count": 9,
+   "contrast_basis": "none",
+   "contrast_marker_hits": 0,
+   "contrast_per_100_tokens": 0.0,
+   "ds_per_100_tokens": 4.167,
+   "math_expression_tail_flag": true,
+   "metaphor_hits": 0,
+   "paragraph_count": 1,
+   "punctuation_clause_markers": 1,
+   "reference_pronouns_count": 0,
+   "rhetorical_state": "formatting_collapse",
+   "seg_basis": "punct",
+   "segmentation_reliable": true,
+   "sentence_count": 1,
+   "stopword_count": 5,
+   "subordinator_hits": 0,
+   "subordinators_per_100_tokens": 0.0,
+   "tail_incomplete_flag": true,
+   "technical_hits": 0,
+   "tiktoken_token_count": 34,
+   "token_count": 24,
+   "transitions_count": 0
+  },
+  "flags": [
+   "short_sentence_count"
+  ],
+  "kernel": {
+   "rᵥ": 0.31176470588235294,
+   "Δx": 0.0,
+   "μ": 0.46257015465625045,
+   "ρᵣ": 0.375
+  },
+  "meta": {
+   "kernel_version": "lang-kernel-rebuild-v19",
+   "length_norm_factor": {
+    "avg_sentence_length": 24.0,
+    "bpe_to_word_ratio": 1.417,
+    "effective_token_count": 24,
+    "sentence_count": 1,
+    "tiktoken_token_count": 34
+   },
+   "numbers_off": false,
+   "positioning": "observational structural telemetry; all geometric language refers to induced structure in feature space only",
+   "prompt": "write a program for recursion in data structure",
+   "prompt_family_id": null,
+   "tiktoken_encoding": "cl100k_base",
+   "tiktoken_version": "0.14.0"
+  },
+  "z": null
+ },
+ "GPT-150": {
+  "aux": {
+   "dₛ": 1.0,
+   "xₚ": 0.36721259639378706,
+   "Δy": -0.48333333333333334,
+   "θ": 0.6168739768596887
+  },
+  "basin": "B3_high_void_or_high_displacement",
+  "basin_raw": "B3_high_void_or_high_displacement",
+  "basin_z": null,
+  "detail": {
+   "dₛ": {
+    "punct": 9,
+    "raw": 0.2903225806451613,
+    "subs": 0
+   },
+   "rᵥ": {
+    "avg_sent_len": 7.75,
+    "bullet_norm": 0.0,
+    "bullets": 0,
+    "inv_len_norm": 1.0,
+    "para_norm": 0.8064516129032259,
+    "paragraphs": 1,
+    "short_norm": 1.0,
+    "short_prop": 0.75
+   },
+   "xₚ": {
+    "met": 0,
+    "met_rate": 0.0,
+    "rare_ratio": 0.0645,
+    "rare_words": 2,
+    "tech": 0
+   },
+   "Δx": {
+    "centroid": 0.7164179104477613,
+    "weights": [
+     0.2222222222222222,
+     0.2727272727272727,
+     0.4,
+     1.0
+    ]
+   },
+   "Δy": {
+    "avg_sent_len": 7.75,
+    "segmentation_strain": -0.4833
+   },
+   "θ": {
+    "adj_cos_mean": 0.38312602314031136,
+    "sims": [
+     0.6689936080056726,
+     0.4803844614152615,
+     0.0
+    ]
+   },
+   "μ": {
+    "r_rate": 0.0,
+    "refs": 0,
+    "t_rate": 0.0,
+    "transitions": 0
+   },
+   "ρᵣ": {
+    "content": 10,
+    "stop": 4
+   }
+  },
+  "evidence": {
+   "adjacent_cosine_mean": 0.38312602314031136,
+   "bullet_line_count": 0,
+   "collapse_subtype": "partial",
+   "constraint_basis": "partial",
+   "content_word_count": 10,
+   "contrast_basis": "none",
+   "contrast_marker_hits": 0,
+   "contrast_per_100_tokens": 0.0,
+   "ds_per_100_tokens": 29.032,
+   "math_expression_tail_flag": true,
+   "metaphor_hits": 0,
+   "paragraph_count": 1,
+   "punctuation_clause_markers": 9,
+   "reference_pronouns_count": 0,
+   "rhetorical_state": "formatting_collapse",
+   "seg_basis": "punct",
+   "segmentation_reliable": true,
+   "sentence_count": 4,
+   "stopword_count": 4,
+   "subordinator_hits": 0,
+   "subordinators_per_100_tokens": 0.0,
+   "tail_incomplete_flag": true,
+   "technical_hits": 0,
+   "tiktoken_token_count": 54,
+   "token_count": 31,
+   "transitions_count": 0
+  },
+  "flags": [],
+  "kernel": {
+   "rᵥ": 0.6919354838709677,
+   "Δx": 0.21641791044776126,
+   "μ": 0.46257015465625045,
+   "ρᵣ": 0.3225806451612903
+  },
+  "meta": {
+   "kernel_version": "lang-kernel-rebuild-v19",
+   "length_norm_factor": {
+    "avg_sentence_length": 7.75,
+    "bpe_to_word_ratio": 1.742,
+    "effective_token_count": 31,
+    "sentence_count": 4,
+    "tiktoken_token_count": 54
+   },
+   "numbers_off": false,
+   "positioning": "observational structural telemetry; all geometric language refers to induced structure in feature space only",
+   "prompt": "Let p = (1, 2, 5, 4)(2, 3) in S_5 . Find the index of <p> in S_5.",
+   "prompt_family_id": null,
+   "tiktoken_encoding": "cl100k_base",
+   "tiktoken_version": "0.14.0"
+  },
+  "z": null
+ },
+ "GPT-152": {
+  "aux": {
+   "dₛ": 0.8130081300813009,
+   "xₚ": 0.45699675037750476,
+   "Δy": -0.31666666666666665,
+   "θ": 1.0
+  },
+  "basin": "B0_centered_compact",
+  "basin_raw": "B0_centered_compact",
+  "basin_z": null,
+  "detail": {
+   "dₛ": {
+    "punct": 4,
+    "raw": 0.0975609756097561,
+    "subs": 0
+   },
+   "rᵥ": {
+    "avg_sent_len": 10.25,
+    "bullet_norm": 0.0,
+    "bullets": 0,
+    "inv_len_norm": 0.8676470588235294,
+    "para_norm": 0.6097560975609756,
+    "paragraphs": 1,
+    "short_norm": 0.8333333333333334,
+    "short_prop": 0.5
+   },
+   "xₚ": {
+    "met": 0,
+    "met_rate": 0.0,
+    "rare_ratio": 0.1707,
+    "rare_words": 7,
+    "tech": 0
+   },
+   "Δx": {
+    "centroid": 0.43162614243835146,
+    "weights": [
+     0.6666666666666666,
+     0.47368421052631576,
+     0.6666666666666666,
+     0.3125
+    ]
+   },
+   "Δy": {
+    "avg_sent_len": 10.25,
+    "segmentation_strain": -0.3167
+   },
+   "θ": {
+    "adj_cos_mean": 0.0,
+    "sims": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "μ": {
+    "r_rate": 0.0,
+    "refs": 0,
+    "t_rate": 0.0,
+    "transitions": 0
+   },
+   "ρᵣ": {
+    "content": 18,
+    "stop": 13
+   }
+  },
+  "evidence": {
+   "adjacent_cosine_mean": 0.0,
+   "bullet_line_count": 0,
+   "collapse_subtype": "none",
+   "constraint_basis": "none",
+   "content_word_count": 18,
+   "contrast_basis": "none",
+   "contrast_marker_hits": 0,
+   "contrast_per_100_tokens": 0.0,
+   "ds_per_100_tokens": 9.756,
+   "math_expression_tail_flag": false,
+   "metaphor_hits": 0,
+   "paragraph_count": 1,
+   "punctuation_clause_markers": 4,
+   "reference_pronouns_count": 0,
+   "rhetorical_state": "assertive",
+   "seg_basis": "punct",
+   "segmentation_reliable": true,
+   "sentence_count": 4,
+   "stopword_count": 13,
+   "subordinator_hits": 0,
+   "subordinators_per_100_tokens": 0.0,
+   "tail_incomplete_flag": false,
+   "technical_hits": 0,
+   "tiktoken_token_count": 67,
+   "token_count": 41,
+   "transitions_count": 0
+  },
+  "flags": [],
+  "kernel": {
+   "rᵥ": 0.5647895743663319,
+   "Δx": -0.06837385756164854,
+   "μ": 0.46257015465625045,
+   "ρᵣ": 0.43902439024390244
+  },
+  "meta": {
+   "kernel_version": "lang-kernel-rebuild-v19",
+   "length_norm_factor": {
+    "avg_sentence_length": 10.25,
+    "bpe_to_word_ratio": 1.634,
+    "effective_token_count": 41,
+    "sentence_count": 4,
+    "tiktoken_token_count": 67
+   },
+   "numbers_off": false,
+   "positioning": "observational structural telemetry; all geometric language refers to induced structure in feature space only",
+   "prompt": "Statement 1 | A factor group of a non-Abelian group is non-Abelian. Statement 2 | If K is a normal subgroup of H and H is a normal subgroup of G, then K is a normal subgroup of G.",
+   "prompt_family_id": null,
+   "tiktoken_encoding": "cl100k_base",
+   "tiktoken_version": "0.14.0"
+  },
+  "z": null
+ },
+ "GPT-199": {
+  "aux": {
+   "dₛ": 1.0,
+   "xₚ": 0.4144115745479631,
+   "Δy": -0.45,
+   "θ": 1.0
+  },
+  "basin": "B3_high_void_or_high_displacement",
+  "basin_raw": "B3_high_void_or_high_displacement",
+  "basin_z": null,
+  "detail": {
+   "dₛ": {
+    "punct": 4,
+    "raw": 0.12121212121212122,
+    "subs": 0
+   },
+   "rᵥ": {
+    "avg_sent_len": 8.25,
+    "bullet_norm": 0.0,
+    "bullets": 0,
+    "inv_len_norm": 0.9852941176470589,
+    "para_norm": 0.7575757575757576,
+    "paragraphs": 1,
+    "short_norm": 1.0,
+    "short_prop": 0.75
+   },
+   "xₚ": {
+    "met": 0,
+    "met_rate": 0.0,
+    "rare_ratio": 0.1212,
+    "rare_words": 4,
+    "tech": 0
+   },
+   "Δx": {
+    "centroid": 0.5319148936170213,
+    "weights": [
+     0.6666666666666666,
+     0.5,
+     0.6666666666666666,
+     0.7777777777777778
+    ]
+   },
+   "Δy": {
+    "avg_sent_len": 8.25,
+    "segmentation_strain": -0.45
+   },
+   "θ": {
+    "adj_cos_mean": 0.0,
+    "sims": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "μ": {
+    "r_rate": 0.0,
+    "refs": 0,
+    "t_rate": 0.0,
+    "transitions": 0
+   },
+   "ρᵣ": {
+    "content": 20,
+    "stop": 6
+   }
+  },
+  "evidence": {
+   "adjacent_cosine_mean": 0.0,
+   "bullet_line_count": 0,
+   "collapse_subtype": "none",
+   "constraint_basis": "none",
+   "content_word_count": 20,
+   "contrast_basis": "none",
+   "contrast_marker_hits": 0,
+   "contrast_per_100_tokens": 0.0,
+   "ds_per_100_tokens": 12.121,
+   "math_expression_tail_flag": false,
+   "metaphor_hits": 0,
+   "paragraph_count": 1,
+   "punctuation_clause_markers": 4,
+   "reference_pronouns_count": 0,
+   "rhetorical_state": "assertive",
+   "seg_basis": "punct",
+   "segmentation_reliable": true,
+   "sentence_count": 4,
+   "stopword_count": 6,
+   "subordinator_hits": 0,
+   "subordinators_per_100_tokens": 0.0,
+   "tail_incomplete_flag": false,
+   "technical_hits": 0,
+   "tiktoken_token_count": 50,
+   "token_count": 33,
+   "transitions_count": 0
+  },
+  "flags": [],
+  "kernel": {
+   "rᵥ": 0.674331550802139,
+   "Δx": 0.03191489361702127,
+   "μ": 0.46257015465625045,
+   "ρᵣ": 0.6060606060606061
+  },
+  "meta": {
+   "kernel_version": "lang-kernel-rebuild-v19",
+   "length_norm_factor": {
+    "avg_sentence_length": 8.25,
+    "bpe_to_word_ratio": 1.515,
+    "effective_token_count": 33,
+    "sentence_count": 4,
+    "tiktoken_token_count": 50
+   },
+   "numbers_off": false,
+   "positioning": "observational structural telemetry; all geometric language refers to induced structure in feature space only",
+   "prompt": "Statement 1 | Every solvable group is of prime-power order. Statement 2 | Every group of prime-power order is solvable.",
+   "prompt_family_id": null,
+   "tiktoken_encoding": "cl100k_base",
+   "tiktoken_version": "0.14.0"
+  },
+  "z": null
+ },
+ "GPT-252": {
+  "aux": {
+   "dₛ": 0.4504504504504505,
+   "xₚ": 0.4652139459455721,
+   "Δy": 1.4666666666666666,
+   "θ": 0.6290579712255056
+  },
+  "basin": "B0_centered_compact",
+  "basin_raw": "B0_centered_compact",
+  "basin_z": null,
+  "detail": {
+   "dₛ": {
+    "punct": 5,
+    "raw": 0.05405405405405406,
+    "subs": 1
+   },
+   "rᵥ": {
+    "avg_sent_len": 37.0,
+    "bullet_norm": 0.0,
+    "bullets": 0,
+    "inv_len_norm": 0.0,
+    "para_norm": 0.2252252252252252,
+    "paragraphs": 1,
+    "short_norm": 0.0,
+    "short_prop": 0.0
+   },
+   "xₚ": {
+    "met": 0,
+    "met_rate": 0.0,
+    "rare_ratio": 0.1802,
+    "rare_words": 20,
+    "tech": 0
+   },
+   "Δx": {
+    "centroid": 0.4718829355002539,
+    "weights": [
+     0.6296296296296297,
+     0.4883720930232558,
+     0.5365853658536586
+    ]
+   },
+   "Δy": {
+    "avg_sent_len": 37.0,
+    "segmentation_strain": 1.4667
+   },
+   "θ": {
+    "adj_cos_mean": 0.37094202877449445,
+    "sims": [
+     0.2848849246447679,
+     0.45699913290422095
+    ]
+   },
+   "μ": {
+    "r_rate": 0.009009009009009009,
+    "refs": 1,
+    "t_rate": 0.0,
+    "transitions": 0
+   },
+   "ρᵣ": {
+    "content": 60,
+    "stop": 34
+   }
+  },
+  "evidence": {
+   "adjacent_cosine_mean": 0.37094202877449445,
+   "bullet_line_count": 0,
+   "collapse_subtype": "none",
+   "constraint_basis": "sentence_suppression",
+   "content_word_count": 60,
+   "contrast_basis": "none",
+   "contrast_marker_hits": 0,
+   "contrast_per_100_tokens": 0.0,
+   "ds_per_100_tokens": 5.405,
+   "math_expression_tail_flag": false,
+   "metaphor_hits": 0,
+   "paragraph_count": 1,
+   "punctuation_clause_markers": 5,
+   "reference_pronouns_count": 1,
+   "rhetorical_state": "complying_under_constraint",
+   "seg_basis": "none",
+   "segmentation_reliable": false,
+   "sentence_count": 3,
+   "stopword_count": 34,
+   "subordinator_hits": 1,
+   "subordinators_per_100_tokens": 0.901,
+   "tail_incomplete_flag": false,
+   "technical_hits": 0,
+   "tiktoken_token_count": 152,
+   "token_count": 111,
+   "transitions_count": 0
+  },
+  "flags": [
+   "short_sentence_count"
+  ],
+  "kernel": {
+   "rᵥ": 0.06756756756756756,
+   "Δx": -0.028117064499746103,
+   "μ": 0.47153980525111117,
+   "ρᵣ": 0.5405405405405406
+  },
+  "meta": {
+   "kernel_version": "lang-kernel-rebuild-v19",
+   "length_norm_factor": {
+    "avg_sentence_length": 37.0,
+    "bpe_to_word_ratio": 1.369,
+    "effective_token_count": 111,
+    "sentence_count": 3,
+    "tiktoken_token_count": 152
+   },
+   "numbers_off": false,
+   "positioning": "observational structural telemetry; all geometric language refers to induced structure in feature space only",
+   "prompt": "Explain all notation present in the following equation, which describes a two-body bound quantum system. Letters have been changed from the usual notation, to confound searching.\n A = B(1) B(2) + B(1) B(2) C A",
+   "prompt_family_id": null,
+   "tiktoken_encoding": "cl100k_base",
+   "tiktoken_version": "0.14.0"
+  },
+  "z": null
+ },
+ "GPT-325": {
+  "aux": {
+   "dₛ": 1.0,
+   "xₚ": 0.4423726055450715,
+   "Δy": -0.35,
+   "θ": 0.8565561723626883
+  },
+  "basin": "B3_high_void_or_high_displacement",
+  "basin_raw": "B3_high_void_or_high_displacement",
+  "basin_z": null,
+  "detail": {
+   "dₛ": {
+    "punct": 5,
+    "raw": 0.1282051282051282,
+    "subs": 0
+   },
+   "rᵥ": {
+    "avg_sent_len": 9.75,
+    "bullet_norm": 0.0,
+    "bullets": 0,
+    "inv_len_norm": 0.8970588235294118,
+    "para_norm": 0.641025641025641,
+    "paragraphs": 1,
+    "short_norm": 1.0,
+    "short_prop": 0.75
+   },
+   "xₚ": {
+    "met": 0,
+    "met_rate": 0.0,
+    "rare_ratio": 0.1538,
+    "rare_words": 6,
+    "tech": 0
+   },
+   "Δx": {
+    "centroid": 0.4447220487195503,
+    "weights": [
+     0.625,
+     0.3333333333333333,
+     0.3076923076923077,
+     0.4444444444444444
+    ]
+   },
+   "Δy": {
+    "avg_sent_len": 9.75,
+    "segmentation_strain": -0.35
+   },
+   "θ": {
+    "adj_cos_mean": 0.1434438276373117,
+    "sims": [
+     0.0,
+     0.2581988897471611,
+     0.17213259316477406
+    ]
+   },
+   "μ": {
+    "r_rate": 0.02564102564102564,
+    "refs": 1,
+    "t_rate": 0.0,
+    "transitions": 0
+   },
+   "ρᵣ": {
+    "content": 16,
+    "stop": 14
+   }
+  },
+  "evidence": {
+   "adjacent_cosine_mean": 0.1434438276373117,
+   "bullet_line_count": 0,
+   "collapse_subtype": "none",
+   "constraint_basis": "none",
+   "content_word_count": 16,
+   "contrast_basis": "none",
+   "contrast_marker_hits": 0,
+   "contrast_per_100_tokens": 0.0,
+   "ds_per_100_tokens": 12.821,
+   "math_expression_tail_flag": false,
+   "metaphor_hits": 0,
+   "paragraph_count": 1,
+   "punctuation_clause_markers": 5,
+   "reference_pronouns_count": 1,
+   "rhetorical_state": "assertive",
+   "seg_basis": "punct",
+   "segmentation_reliable": true,
+   "sentence_count": 4,
+   "stopword_count": 14,
+   "subordinator_hits": 0,
+   "subordinators_per_100_tokens": 0.0,
+   "tail_incomplete_flag": false,
+   "technical_hits": 0,
+   "tiktoken_token_count": 60,
+   "token_count": 39,
+   "transitions_count": 0
+  },
+  "flags": [],
+  "kernel": {
+   "rᵥ": 0.6217194570135747,
+   "Δx": -0.05527795128044971,
+   "μ": 0.48814324886089216,
+   "ρᵣ": 0.41025641025641024
+  },
+  "meta": {
+   "kernel_version": "lang-kernel-rebuild-v19",
+   "length_norm_factor": {
+    "avg_sentence_length": 9.75,
+    "bpe_to_word_ratio": 1.538,
+    "effective_token_count": 39,
+    "sentence_count": 4,
+    "tiktoken_token_count": 60
+   },
+   "numbers_off": false,
+   "positioning": "observational structural telemetry; all geometric language refers to induced structure in feature space only",
+   "prompt": "How many of the following compounds will exhibit optical activity?\n \n\n (Z)-1-chloro-2-methylbut-1-ene\n (3aR,7aS,E)-8-(chloromethylene)hexahydro-4,7-methanoisobenzofuran-1,3-dione\n (2R,3S)-2,3-dimethylsuccinic acid\n (2R,3R)-2,3-dimethylsuccinic acid\n (R)-cyclohex-3-en-1-ol\n (1s,3s,5s)-cyclohexane-1,3,5-triol\n 1-cyclopentyl-3-methylbutan-1-one",
+   "prompt_family_id": null,
+   "tiktoken_encoding": "cl100k_base",
+   "tiktoken_version": "0.14.0"
+  },
+  "z": null
+ },
+ "GPT-4": {
+  "aux": {
+   "dₛ": 0.2380952380952381,
+   "xₚ": 0.38461624360881785,
+   "Δy": 0.16666666666666666,
+   "θ": 0.517618089381134
+  },
+  "basin": "B0_centered_compact",
+  "basin_raw": "B0_centered_compact",
+  "basin_z": null,
+  "detail": {
+   "dₛ": {
+    "punct": 1,
+    "raw": 0.02857142857142857,
+    "subs": 0
+   },
+   "rᵥ": {
+    "avg_sent_len": 17.5,
+    "bullet_norm": 0.0,
+    "bullets": 0,
+    "inv_len_norm": 0.4411764705882353,
+    "para_norm": 0.7142857142857143,
+    "paragraphs": 1,
+    "short_norm": 0.0,
+    "short_prop": 0.0
+   },
+   "xₚ": {
+    "met": 0,
+    "met_rate": 0.0,
+    "rare_ratio": 0.0857,
+    "rare_words": 3,
+    "tech": 0
+   },
+   "Δx": {
+    "centroid": 0.4782608695652174,
+    "weights": [
+     0.6363636363636364,
+     0.5833333333333334
+    ]
+   },
+   "Δy": {
+    "avg_sent_len": 17.5,
+    "segmentation_strain": 0.1667
+   },
+   "θ": {
+    "adj_cos_mean": 0.4823819106188661,
+    "sims": [
+     0.4823819106188661
+    ]
+   },
+   "μ": {
+    "r_rate": 0.0,
+    "refs": 0,
+    "t_rate": 0.0,
+    "transitions": 0
+   },
+   "ρᵣ": {
+    "content": 21,
+    "stop": 13
+   }
+  },
+  "evidence": {
+   "adjacent_cosine_mean": 0.4823819106188661,
+   "bullet_line_count": 0,
+   "collapse_subtype": "none",
+   "constraint_basis": "none",
+   "content_word_count": 21,
+   "contrast_basis": "none",
+   "contrast_marker_hits": 0,
+   "contrast_per_100_tokens": 0.0,
+   "ds_per_100_tokens": 2.857,
+   "math_expression_tail_flag": false,
+   "metaphor_hits": 0,
+   "paragraph_count": 1,
+   "punctuation_clause_markers": 1,
+   "reference_pronouns_count": 0,
+   "rhetorical_state": "assertive",
+   "seg_basis": "punct",
+   "segmentation_reliable": true,
+   "sentence_count": 2,
+   "stopword_count": 13,
+   "subordinator_hits": 0,
+   "subordinators_per_100_tokens": 0.0,
+   "tail_incomplete_flag": false,
+   "technical_hits": 0,
+   "tiktoken_token_count": 45,
+   "token_count": 35,
+   "transitions_count": 0
+  },
+  "flags": [
+   "short_sentence_count"
+  ],
+  "kernel": {
+   "rᵥ": 0.3025210084033613,
+   "Δx": -0.021739130434782594,
+   "μ": 0.46257015465625045,
+   "ρᵣ": 0.6
+  },
+  "meta": {
+   "kernel_version": "lang-kernel-rebuild-v19",
+   "length_norm_factor": {
+    "avg_sentence_length": 17.5,
+    "bpe_to_word_ratio": 1.286,
+    "effective_token_count": 35,
+    "sentence_count": 2,
+    "tiktoken_token_count": 45
+   },
+   "numbers_off": false,
+   "positioning": "observational structural telemetry; all geometric language refers to induced structure in feature space only",
+   "prompt": "what was the prison called in the green mile",
+   "prompt_family_id": null,
+   "tiktoken_encoding": "cl100k_base",
+   "tiktoken_version": "0.14.0"
+  },
+  "z": null
+ },
+ "GPT-75": {
+  "aux": {
+   "dₛ": 0.8333333333333334,
+   "xₚ": 0.4247428250543575,
+   "Δy": 0.0,
+   "θ": 0.9325800137536758
+  },
+  "basin": "B0_centered_compact",
+  "basin_raw": "B0_centered_compact",
+  "basin_z": null,
+  "detail": {
+   "dₛ": {
+    "punct": 2,
+    "raw": 0.1,
+    "subs": 1
+   },
+   "rᵥ": {
+    "avg_sent_len": 15.0,
+    "bullet_norm": 0.0,
+    "bullets": 0,
+    "inv_len_norm": 0.5882352941176471,
+    "para_norm": 0.8333333333333334,
+    "paragraphs": 1,
+    "short_norm": 0.8333333333333334,
+    "short_prop": 0.5
+   },
+   "xₚ": {
+    "met": 0,
+    "met_rate": 0.0,
+    "rare_ratio": 0.1333,
+    "rare_words": 4,
+    "tech": 0
+   },
+   "Δx": {
+    "centroid": 0.5599999999999999,
+    "weights": [
+     0.55,
+     0.7
+    ]
+   },
+   "Δy": {
+    "avg_sent_len": 15.0,
+    "segmentation_strain": 0.0
+   },
+   "θ": {
+    "adj_cos_mean": 0.0674199862463242,
+    "sims": [
+     0.0674199862463242
+    ]
+   },
+   "μ": {
+    "r_rate": 0.03333333333333333,
+    "refs": 1,
+    "t_rate": 0.03333333333333333,
+    "transitions": 1
+   },
+   "ρᵣ": {
+    "content": 18,
+    "stop": 11
+   }
+  },
+  "evidence": {
+   "adjacent_cosine_mean": 0.0674199862463242,
+   "bullet_line_count": 0,
+   "collapse_subtype": "none",
+   "constraint_basis": "none",
+   "content_word_count": 18,
+   "contrast_basis": "none",
+   "contrast_marker_hits": 0,
+   "contrast_per_100_tokens": 0.0,
+   "ds_per_100_tokens": 10.0,
+   "math_expression_tail_flag": false,
+   "metaphor_hits": 0,
+   "paragraph_count": 1,
+   "punctuation_clause_markers": 2,
+   "reference_pronouns_count": 1,
+   "rhetorical_state": "assertive",
+   "seg_basis": "punct",
+   "segmentation_reliable": true,
+   "sentence_count": 2,
+   "stopword_count": 11,
+   "subordinator_hits": 1,
+   "subordinators_per_100_tokens": 3.333,
+   "tail_incomplete_flag": false,
+   "technical_hits": 0,
+   "tiktoken_token_count": 35,
+   "token_count": 30,
+   "transitions_count": 1
+  },
+  "flags": [
+   "short_sentence_count"
+  ],
+  "kernel": {
+   "rᵥ": 0.5759803921568628,
+   "Δx": 0.05999999999999994,
+   "μ": 0.5621765008857981,
+   "ρᵣ": 0.6
+  },
+  "meta": {
+   "kernel_version": "lang-kernel-rebuild-v19",
+   "length_norm_factor": {
+    "avg_sentence_length": 15.0,
+    "bpe_to_word_ratio": 1.167,
+    "effective_token_count": 30,
+    "sentence_count": 2,
+    "tiktoken_token_count": 35
+   },
+   "numbers_off": false,
+   "positioning": "observational structural telemetry; all geometric language refers to induced structure in feature space only",
+   "prompt": "do you have to identify yourself to a police officer in pennsylvania",
+   "prompt_family_id": null,
+   "tiktoken_encoding": "cl100k_base",
+   "tiktoken_version": "0.14.0"
+  },
+  "z": null
+ },
+ "Gemini-150": {
+  "aux": {
+   "dₛ": 1.0,
+   "xₚ": 0.382645761452658,
+   "Δy": -0.2,
+   "θ": 0.8599719915971991
+  },
+  "basin": "B3_high_void_or_high_displacement",
+  "basin_raw": "B3_high_void_or_high_displacement",
+  "basin_z": null,
+  "detail": {
+   "dₛ": {
+    "punct": 11,
+    "raw": 0.4583333333333333,
+    "subs": 0
+   },
+   "rᵥ": {
+    "avg_sent_len": 12.0,
+    "bullet_norm": 0.0,
+    "bullets": 0,
+    "inv_len_norm": 0.7647058823529411,
+    "para_norm": 1.0,
+    "paragraphs": 1,
+    "short_norm": 0.8333333333333334,
+    "short_prop": 0.5
+   },
+   "xₚ": {
+    "met": 0,
+    "met_rate": 0.0,
+    "rare_ratio": 0.0833,
+    "rare_words": 2,
+    "tech": 0
+   },
+   "Δx": {
+    "centroid": 0.4285714285714286,
+    "weights": [
+     0.2222222222222222,
+     0.16666666666666666
+    ]
+   },
+   "Δy": {
+    "avg_sent_len": 12.0,
+    "segmentation_strain": -0.2
+   },
+   "θ": {
+    "adj_cos_mean": 0.140028008402801,
+    "sims": [
+     0.140028008402801
+    ]
+   },
+   "μ": {
+    "r_rate": 0.041666666666666664,
+    "refs": 1,
+    "t_rate": 0.0,
+    "transitions": 0
+   },
+   "ρᵣ": {
+    "content": 5,
+    "stop": 5
+   }
+  },
+  "evidence": {
+   "adjacent_cosine_mean": 0.140028008402801,
+   "bullet_line_count": 0,
+   "collapse_subtype": "partial",
+   "constraint_basis": "partial",
+   "content_word_count": 5,
+   "contrast_basis": "none",
+   "contrast_marker_hits": 0,
+   "contrast_per_100_tokens": 0.0,
+   "ds_per_100_tokens": 45.833,
+   "math_expression_tail_flag": false,
+   "metaphor_hits": 0,
+   "paragraph_count": 1,
+   "punctuation_clause_markers": 11,
+   "reference_pronouns_count": 1,
+   "rhetorical_state": "formatting_collapse",
+   "seg_basis": "punct",
+   "segmentation_reliable": true,
+   "sentence_count": 2,
+   "stopword_count": 5,
+   "subordinator_hits": 0,
+   "subordinators_per_100_tokens": 0.0,
+   "tail_incomplete_flag": true,
+   "technical_hits": 0,
+   "tiktoken_token_count": 41,
+   "token_count": 24,
+   "transitions_count": 0
+  },
+  "flags": [
+   "short_sentence_count"
+  ],
+  "kernel": {
+   "rᵥ": 0.6612745098039216,
+   "Δx": -0.0714285714285714,
+   "μ": 0.5041665702187286,
+   "ρᵣ": 0.20833333333333334
+  },
+  "meta": {
+   "kernel_version": "lang-kernel-rebuild-v19",
+   "length_norm_factor": {
+    "avg_sentence_length": 12.0,
+    "bpe_to_word_ratio": 1.708,
+    "effective_token_count": 24,
+    "sentence_count": 2,
+    "tiktoken_token_count": 41
+   },
+   "numbers_off": false,
+   "positioning": "observational structural telemetry; all geometric language refers to induced structure in feature space only",
+   "prompt": "Let p = (1, 2, 5, 4)(2, 3) in S_5 . Find the index of <p> in S_5.",
+   "prompt_family_id": null,
+   "tiktoken_encoding": "cl100k_base",
+   "tiktoken_version": "0.14.0"
+  },
+  "z": null
+ },
+ "Gemini-152": {
+  "aux": {
+   "dₛ": 1.0,
+   "xₚ": 0.40585893855292676,
+   "Δy": 0.2,
+   "θ": 0.7165266452430796
+  },
+  "basin": "B0_centered_compact",
+  "basin_raw": "B0_centered_compact",
+  "basin_z": null,
+  "detail": {
+   "dₛ": {
+    "punct": 5,
+    "raw": 0.1388888888888889,
+    "subs": 0
+   },
+   "rᵥ": {
+    "avg_sent_len": 18.0,
+    "bullet_norm": 0.0,
+    "bullets": 0,
+    "inv_len_norm": 0.4117647058823529,
+    "para_norm": 0.6944444444444444,
+    "paragraphs": 1,
+    "short_norm": 0.0,
+    "short_prop": 0.0
+   },
+   "xₚ": {
+    "met": 0,
+    "met_rate": 0.0,
+    "rare_ratio": 0.1111,
+    "rare_words": 4,
+    "tech": 0
+   },
+   "Δx": {
+    "centroid": 0.4666666666666667,
+    "weights": [
+     0.3333333333333333,
+     0.2916666666666667
+    ]
+   },
+   "Δy": {
+    "avg_sent_len": 18.0,
+    "segmentation_strain": 0.2
+   },
+   "θ": {
+    "adj_cos_mean": 0.2834733547569204,
+    "sims": [
+     0.2834733547569204
+    ]
+   },
+   "μ": {
+    "r_rate": 0.0,
+    "refs": 0,
+    "t_rate": 0.0,
+    "transitions": 0
+   },
+   "ρᵣ": {
+    "content": 11,
+    "stop": 12
+   }
+  },
+  "evidence": {
+   "adjacent_cosine_mean": 0.2834733547569204,
+   "bullet_line_count": 0,
+   "collapse_subtype": "none",
+   "constraint_basis": "none",
+   "content_word_count": 11,
+   "contrast_basis": "token",
+   "contrast_marker_hits": 1,
+   "contrast_per_100_tokens": 2.778,
+   "ds_per_100_tokens": 13.889,
+   "math_expression_tail_flag": false,
+   "metaphor_hits": 0,
+   "paragraph_count": 1,
+   "punctuation_clause_markers": 5,
+   "reference_pronouns_count": 0,
+   "rhetorical_state": "assertive",
+   "seg_basis": "punct",
+   "segmentation_reliable": true,
+   "sentence_count": 2,
+   "stopword_count": 12,
+   "subordinator_hits": 0,
+   "subordinators_per_100_tokens": 0.0,
+   "tail_incomplete_flag": false,
+   "technical_hits": 0,
+   "tiktoken_token_count": 75,
+   "token_count": 36,
+   "transitions_count": 0
+  },
+  "flags": [
+   "short_sentence_count"
+  ],
+  "kernel": {
+   "rᵥ": 0.2906862745098039,
+   "Δx": -0.033333333333333326,
+   "μ": 0.46257015465625045,
+   "ρᵣ": 0.3055555555555556
+  },
+  "meta": {
+   "kernel_version": "lang-kernel-rebuild-v19",
+   "length_norm_factor": {
+    "avg_sentence_length": 18.0,
+    "bpe_to_word_ratio": 2.083,
+    "effective_token_count": 36,
+    "sentence_count": 2,
+    "tiktoken_token_count": 75
+   },
+   "numbers_off": false,
+   "positioning": "observational structural telemetry; all geometric language refers to induced structure in feature space only",
+   "prompt": "Statement 1 | A factor group of a non-Abelian group is non-Abelian. Statement 2 | If K is a normal subgroup of H and H is a normal subgroup of G, then K is a normal subgroup of G.",
+   "prompt_family_id": null,
+   "tiktoken_encoding": "cl100k_base",
+   "tiktoken_version": "0.14.0"
+  },
+  "z": null
+ },
+ "Gemini-199": {
+  "aux": {
+   "dₛ": 0.8620689655172414,
+   "xₚ": 0.42867935681801994,
+   "Δy": -0.03333333333333333,
+   "θ": 0.6558763991941574
+  },
+  "basin": "B0_centered_compact",
+  "basin_raw": "B0_centered_compact",
+  "basin_z": null,
+  "detail": {
+   "dₛ": {
+    "punct": 3,
+    "raw": 0.10344827586206896,
+    "subs": 0
+   },
+   "rᵥ": {
+    "avg_sent_len": 14.5,
+    "bullet_norm": 0.0,
+    "bullets": 0,
+    "inv_len_norm": 0.6176470588235294,
+    "para_norm": 0.8620689655172414,
+    "paragraphs": 1,
+    "short_norm": 0.0,
+    "short_prop": 0.0
+   },
+   "xₚ": {
+    "met": 0,
+    "met_rate": 0.0,
+    "rare_ratio": 0.1379,
+    "rare_words": 4,
+    "tech": 0
+   },
+   "Δx": {
+    "centroid": 0.5544554455445545,
+    "weights": [
+     0.42857142857142855,
+     0.5333333333333333
+    ]
+   },
+   "Δy": {
+    "avg_sent_len": 14.5,
+    "segmentation_strain": -0.0333
+   },
+   "θ": {
+    "adj_cos_mean": 0.3441236008058426,
+    "sims": [
+     0.3441236008058426
+    ]
+   },
+   "μ": {
+    "r_rate": 0.0,
+    "refs": 0,
+    "t_rate": 0.0,
+    "transitions": 0
+   },
+   "ρᵣ": {
+    "content": 14,
+    "stop": 10
+   }
+  },
+  "evidence": {
+   "adjacent_cosine_mean": 0.3441236008058426,
+   "bullet_line_count": 0,
+   "collapse_subtype": "none",
+   "constraint_basis": "none",
+   "content_word_count": 14,
+   "contrast_basis": "token",
+   "contrast_marker_hits": 1,
+   "contrast_per_100_tokens": 3.448,
+   "ds_per_100_tokens": 10.345,
+   "math_expression_tail_flag": false,
+   "metaphor_hits": 0,
+   "paragraph_count": 1,
+   "punctuation_clause_markers": 3,
+   "reference_pronouns_count": 0,
+   "rhetorical_state": "assertive",
+   "seg_basis": "punct",
+   "segmentation_reliable": true,
+   "sentence_count": 2,
+   "stopword_count": 10,
+   "subordinator_hits": 0,
+   "subordinators_per_100_tokens": 0.0,
+   "tail_incomplete_flag": false,
+   "technical_hits": 0,
+   "tiktoken_token_count": 47,
+   "token_count": 29,
+   "transitions_count": 0
+  },
+  "flags": [
+   "short_sentence_count"
+  ],
+  "kernel": {
+   "rᵥ": 0.3821501014198783,
+   "Δx": 0.054455445544554504,
+   "μ": 0.46257015465625045,
+   "ρᵣ": 0.4827586206896552
+  },
+  "meta": {
+   "kernel_version": "lang-kernel-rebuild-v19",
+   "length_norm_factor": {
+    "avg_sentence_length": 14.5,
+    "bpe_to_word_ratio": 1.621,
+    "effective_token_count": 29,
+    "sentence_count": 2,
+    "tiktoken_token_count": 47
+   },
+   "numbers_off": false,
+   "positioning": "observational structural telemetry; all geometric language refers to induced structure in feature space only",
+   "prompt": "Statement 1 | Every solvable group is of prime-power order. Statement 2 | Every group of prime-power order is solvable.",
+   "prompt_family_id": null,
+   "tiktoken_encoding": "cl100k_base",
+   "tiktoken_version": "0.14.0"
+  },
+  "z": null
+ },
+ "Gemini-252": {
+  "aux": {
+   "dₛ": 0.7407407407407408,
+   "xₚ": 0.4247428250543575,
+   "Δy": 0.5,
+   "θ": 0.7405627391686145
+  },
+  "basin": "B0_centered_compact",
+  "basin_raw": "B0_centered_compact",
+  "basin_z": null,
+  "detail": {
+   "dₛ": {
+    "punct": 4,
+    "raw": 0.08888888888888889,
+    "subs": 0
+   },
+   "rᵥ": {
+    "avg_sent_len": 22.5,
+    "bullet_norm": 0.0,
+    "bullets": 0,
+    "inv_len_norm": 0.14705882352941177,
+    "para_norm": 0.5555555555555556,
+    "paragraphs": 1,
+    "short_norm": 0.0,
+    "short_prop": 0.0
+   },
+   "xₚ": {
+    "met": 0,
+    "met_rate": 0.0,
+    "rare_ratio": 0.1333,
+    "rare_words": 6,
+    "tech": 0
+   },
+   "Δx": {
+    "centroid": 0.4471544715447155,
+    "weights": [
+     0.36363636363636365,
+     0.29411764705882354
+    ]
+   },
+   "Δy": {
+    "avg_sent_len": 22.5,
+    "segmentation_strain": 0.5
+   },
+   "θ": {
+    "adj_cos_mean": 0.25943726083138546,
+    "sims": [
+     0.25943726083138546
+    ]
+   },
+   "μ": {
+    "r_rate": 0.022222222222222223,
+    "refs": 1,
+    "t_rate": 0.0,
+    "transitions": 0
+   },
+   "ρᵣ": {
+    "content": 14,
+    "stop": 16
+   }
+  },
+  "evidence": {
+   "adjacent_cosine_mean": 0.25943726083138546,
+   "bullet_line_count": 0,
+   "collapse_subtype": "none",
+   "constraint_basis": "none",
+   "content_word_count": 14,
+   "contrast_basis": "none",
+   "contrast_marker_hits": 0,
+   "contrast_per_100_tokens": 0.0,
+   "ds_per_100_tokens": 8.889,
+   "math_expression_tail_flag": false,
+   "metaphor_hits": 0,
+   "paragraph_count": 1,
+   "punctuation_clause_markers": 4,
+   "reference_pronouns_count": 1,
+   "rhetorical_state": "assertive",
+   "seg_basis": "punct",
+   "segmentation_reliable": true,
+   "sentence_count": 2,
+   "stopword_count": 16,
+   "subordinator_hits": 0,
+   "subordinators_per_100_tokens": 0.0,
+   "tail_incomplete_flag": false,
+   "technical_hits": 0,
+   "tiktoken_token_count": 81,
+   "token_count": 45,
+   "transitions_count": 0
+  },
+  "flags": [
+   "short_sentence_count"
+  ],
+  "kernel": {
+   "rᵥ": 0.19607843137254902,
+   "Δx": -0.05284552845528451,
+   "μ": 0.48472697510544116,
+   "ρᵣ": 0.3111111111111111
+  },
+  "meta": {
+   "kernel_version": "lang-kernel-rebuild-v19",
+   "length_norm_factor": {
+    "avg_sentence_length": 22.5,
+    "bpe_to_word_ratio": 1.8,
+    "effective_token_count": 45,
+    "sentence_count": 2,
+    "tiktoken_token_count": 81
+   },
+   "numbers_off": false,
+   "positioning": "observational structural telemetry; all geometric language refers to induced structure in feature space only",
+   "prompt": "Explain all notation present in the following equation, which describes a two-body bound quantum system. Letters have been changed from the usual notation, to confound searching.\n A = B(1) B(2) + B(1) B(2) C A",
+   "prompt_family_id": null,
+   "tiktoken_encoding": "cl100k_base",
+   "tiktoken_version": "0.14.0"
+  },
+  "z": null
+ },
+ "Gemini-325": {
+  "aux": {
+   "dₛ": 1.0,
+   "xₚ": 0.5475519303322197,
+   "Δy": 0.7,
+   "θ": 0.7148670257438995
+  },
+  "basin": "B0_centered_compact",
+  "basin_raw": "B0_centered_compact",
+  "basin_z": null,
+  "detail": {
+   "dₛ": {
+    "punct": 7,
+    "raw": 0.13725490196078433,
+    "subs": 0
+   },
+   "rᵥ": {
+    "avg_sent_len": 25.5,
+    "bullet_norm": 0.0,
+    "bullets": 0,
+    "inv_len_norm": 0.0,
+    "para_norm": 0.49019607843137253,
+    "paragraphs": 1,
+    "short_norm": 0.0,
+    "short_prop": 0.0
+   },
+   "xₚ": {
+    "met": 0,
+    "met_rate": 0.0,
+    "rare_ratio": 0.2745,
+    "rare_words": 14,
+    "tech": 0
+   },
+   "Δx": {
+    "centroid": 0.40609137055837563,
+    "weights": [
+     0.5416666666666666,
+     0.37037037037037035
+    ]
+   },
+   "Δy": {
+    "avg_sent_len": 25.5,
+    "segmentation_strain": 0.7
+   },
+   "θ": {
+    "adj_cos_mean": 0.2851329742561005,
+    "sims": [
+     0.2851329742561005
+    ]
+   },
+   "μ": {
+    "r_rate": 0.0,
+    "refs": 0,
+    "t_rate": 0.0,
+    "transitions": 0
+   },
+   "ρᵣ": {
+    "content": 23,
+    "stop": 7
+   }
+  },
+  "evidence": {
+   "adjacent_cosine_mean": 0.2851329742561005,
+   "bullet_line_count": 0,
+   "collapse_subtype": "none",
+   "constraint_basis": "none",
+   "content_word_count": 23,
+   "contrast_basis": "none",
+   "contrast_marker_hits": 0,
+   "contrast_per_100_tokens": 0.0,
+   "ds_per_100_tokens": 13.725,
+   "math_expression_tail_flag": false,
+   "metaphor_hits": 0,
+   "paragraph_count": 1,
+   "punctuation_clause_markers": 7,
+   "reference_pronouns_count": 0,
+   "rhetorical_state": "assertive",
+   "seg_basis": "punct",
+   "segmentation_reliable": true,
+   "sentence_count": 2,
+   "stopword_count": 7,
+   "subordinator_hits": 0,
+   "subordinators_per_100_tokens": 0.0,
+   "tail_incomplete_flag": false,
+   "technical_hits": 0,
+   "tiktoken_token_count": 113,
+   "token_count": 51,
+   "transitions_count": 0
+  },
+  "flags": [
+   "short_sentence_count"
+  ],
+  "kernel": {
+   "rᵥ": 0.14705882352941174,
+   "Δx": -0.09390862944162437,
+   "μ": 0.46257015465625045,
+   "ρᵣ": 0.45098039215686275
+  },
+  "meta": {
+   "kernel_version": "lang-kernel-rebuild-v19",
+   "length_norm_factor": {
+    "avg_sentence_length": 25.5,
+    "bpe_to_word_ratio": 2.216,
+    "effective_token_count": 51,
+    "sentence_count": 2,
+    "tiktoken_token_count": 113
+   },
+   "numbers_off": false,
+   "positioning": "observational structural telemetry; all geometric language refers to induced structure in feature space only",
+   "prompt": "How many of the following compounds will exhibit optical activity?\n \n\n (Z)-1-chloro-2-methylbut-1-ene\n (3aR,7aS,E)-8-(chloromethylene)hexahydro-4,7-methanoisobenzofuran-1,3-dione\n (2R,3S)-2,3-dimethylsuccinic acid\n (2R,3R)-2,3-dimethylsuccinic acid\n (R)-cyclohex-3-en-1-ol\n (1s,3s,5s)-cyclohexane-1,3,5-triol\n 1-cyclopentyl-3-methylbutan-1-one",
+   "prompt_family_id": null,
+   "tiktoken_encoding": "cl100k_base",
+   "tiktoken_version": "0.14.0"
+  },
+  "z": null
+ },
+ "Gemini-4": {
+  "aux": {
+   "dₛ": 0.0,
+   "xₚ": 0.4144115745479631,
+   "Δy": 0.1,
+   "θ": 0.4936303164581667
+  },
+  "basin": "B0_centered_compact",
+  "basin_raw": "B0_centered_compact",
+  "basin_z": null,
+  "detail": {
+   "dₛ": {
+    "punct": 0,
+    "raw": 0.0,
+    "subs": 0
+   },
+   "rᵥ": {
+    "avg_sent_len": 16.5,
+    "bullet_norm": 0.0,
+    "bullets": 0,
+    "inv_len_norm": 0.5,
+    "para_norm": 0.7575757575757576,
+    "paragraphs": 1,
+    "short_norm": 0.0,
+    "short_prop": 0.0
+   },
+   "xₚ": {
+    "met": 0,
+    "met_rate": 0.0,
+    "rare_ratio": 0.1212,
+    "rare_words": 4,
+    "tech": 0
+   },
+   "Δx": {
+    "centroid": 0.5172413793103449,
+    "weights": [
+     0.6363636363636364,
+     0.6818181818181818
+    ]
+   },
+   "Δy": {
+    "avg_sent_len": 16.5,
+    "segmentation_strain": 0.1
+   },
+   "θ": {
+    "adj_cos_mean": 0.5063696835418333,
+    "sims": [
+     0.5063696835418333
+    ]
+   },
+   "μ": {
+    "r_rate": 0.030303030303030304,
+    "refs": 1,
+    "t_rate": 0.0,
+    "transitions": 0
+   },
+   "ρᵣ": {
+    "content": 22,
+    "stop": 9
+   }
+  },
+  "evidence": {
+   "adjacent_cosine_mean": 0.5063696835418333,
+   "bullet_line_count": 0,
+   "collapse_subtype": "none",
+   "constraint_basis": "none",
+   "content_word_count": 22,
+   "contrast_basis": "none",
+   "contrast_marker_hits": 0,
+   "contrast_per_100_tokens": 0.0,
+   "ds_per_100_tokens": 0.0,
+   "math_expression_tail_flag": false,
+   "metaphor_hits": 0,
+   "paragraph_count": 1,
+   "punctuation_clause_markers": 0,
+   "reference_pronouns_count": 1,
+   "rhetorical_state": "assertive",
+   "seg_basis": "punct",
+   "segmentation_reliable": true,
+   "sentence_count": 2,
+   "stopword_count": 9,
+   "subordinator_hits": 0,
+   "subordinators_per_100_tokens": 0.0,
+   "tail_incomplete_flag": false,
+   "technical_hits": 0,
+   "tiktoken_token_count": 42,
+   "token_count": 33,
+   "transitions_count": 0
+  },
+  "flags": [
+   "short_sentence_count"
+  ],
+  "kernel": {
+   "rᵥ": 0.32727272727272727,
+   "Δx": 0.017241379310344862,
+   "μ": 0.4928035272977432,
+   "ρᵣ": 0.6666666666666666
+  },
+  "meta": {
+   "kernel_version": "lang-kernel-rebuild-v19",
+   "length_norm_factor": {
+    "avg_sentence_length": 16.5,
+    "bpe_to_word_ratio": 1.273,
+    "effective_token_count": 33,
+    "sentence_count": 2,
+    "tiktoken_token_count": 42
+   },
+   "numbers_off": false,
+   "positioning": "observational structural telemetry; all geometric language refers to induced structure in feature space only",
+   "prompt": "what was the prison called in the green mile",
+   "prompt_family_id": null,
+   "tiktoken_encoding": "cl100k_base",
+   "tiktoken_version": "0.14.0"
+  },
+  "z": null
+ },
+ "Gemini-46": {
+  "aux": {
+   "dₛ": 1.0,
+   "xₚ": 0.3502760353256107,
+   "Δy": 0.5333333333333333,
+   "θ": 0.0
+  },
+  "basin": "B0_centered_compact",
+  "basin_raw": "B0_centered_compact",
+  "basin_z": null,
+  "detail": {
+   "dₛ": {
+    "punct": 3,
+    "raw": 0.13043478260869565,
+    "subs": 0
+   },
+   "rᵥ": {
+    "avg_sent_len": 23.0,
+    "bullet_norm": 0.0,
+    "bullets": 0,
+    "inv_len_norm": 0.11764705882352941,
+    "para_norm": 1.0,
+    "paragraphs": 1,
+    "short_norm": 0.0,
+    "short_prop": 0.0
+   },
+   "xₚ": {
+    "met": 0,
+    "met_rate": 0.0,
+    "rare_ratio": 0.0435,
+    "rare_words": 1,
+    "tech": 0
+   },
+   "Δx": {
+    "centroid": 0.5,
+    "weights": [
+     1.0
+    ]
+   },
+   "Δy": {
+    "avg_sent_len": 23.0,
+    "segmentation_strain": 0.5333
+   },
+   "θ": {
+    "adj_cos_mean": 1.0,
+    "sims": []
+   },
+   "μ": {
+    "r_rate": 0.0,
+    "refs": 0,
+    "t_rate": 0.0,
+    "transitions": 0
+   },
+   "ρᵣ": {
+    "content": 6,
+    "stop": 9
+   }
+  },
+  "evidence": {
+   "adjacent_cosine_mean": 1.0,
+   "bullet_line_count": 0,
+   "collapse_subtype": "math",
+   "constraint_basis": "math",
+   "content_word_count": 6,
+   "contrast_basis": "none",
+   "contrast_marker_hits": 0,
+   "contrast_per_100_tokens": 0.0,
+   "ds_per_100_tokens": 13.043,
+   "math_expression_tail_flag": true,
+   "metaphor_hits": 0,
+   "paragraph_count": 1,
+   "punctuation_clause_markers": 3,
+   "reference_pronouns_count": 0,
+   "rhetorical_state": "formatting_collapse",
+   "seg_basis": "none",
+   "segmentation_reliable": false,
+   "sentence_count": 1,
+   "stopword_count": 9,
+   "subordinator_hits": 0,
+   "subordinators_per_100_tokens": 0.0,
+   "tail_incomplete_flag": true,
+   "technical_hits": 0,
+   "tiktoken_token_count": 38,
+   "token_count": 23,
+   "transitions_count": 0
+  },
+  "flags": [
+   "short_sentence_count"
+  ],
+  "kernel": {
+   "rᵥ": 0.32352941176470584,
+   "Δx": 0.0,
+   "μ": 0.46257015465625045,
+   "ρᵣ": 0.2608695652173913
+  },
+  "meta": {
+   "kernel_version": "lang-kernel-rebuild-v19",
+   "length_norm_factor": {
+    "avg_sentence_length": 23.0,
+    "bpe_to_word_ratio": 1.652,
+    "effective_token_count": 23,
+    "sentence_count": 1,
+    "tiktoken_token_count": 38
+   },
+   "numbers_off": false,
+   "positioning": "observational structural telemetry; all geometric language refers to induced structure in feature space only",
+   "prompt": "how to find the distance of a point to a line",
+   "prompt_family_id": null,
+   "tiktoken_encoding": "cl100k_base",
+   "tiktoken_version": "0.14.0"
+  },
+  "z": null
+ },
+ "Gemini-75": {
+  "aux": {
+   "dₛ": 0.3875968992248062,
+   "xₚ": 0.3526960563053412,
+   "Δy": 0.43333333333333335,
+   "θ": 0.7327387580875756
+  },
+  "basin": "B1_right_bias_compact",
+  "basin_raw": "B1_right_bias_compact",
+  "basin_z": null,
+  "detail": {
+   "dₛ": {
+    "punct": 1,
+    "raw": 0.046511627906976744,
+    "subs": 1
+   },
+   "rᵥ": {
+    "avg_sent_len": 21.5,
+    "bullet_norm": 0.0,
+    "bullets": 0,
+    "inv_len_norm": 0.20588235294117646,
+    "para_norm": 0.5813953488372093,
+    "paragraphs": 1,
+    "short_norm": 0.8333333333333334,
+    "short_prop": 0.5
+   },
+   "xₚ": {
+    "met": 0,
+    "met_rate": 0.0,
+    "rare_ratio": 0.0465,
+    "rare_words": 2,
+    "tech": 0
+   },
+   "Δx": {
+    "centroid": 0.6000000000000001,
+    "weights": [
+     0.3333333333333333,
+     0.5
+    ]
+   },
+   "Δy": {
+    "avg_sent_len": 21.5,
+    "segmentation_strain": 0.4333
+   },
+   "θ": {
+    "adj_cos_mean": 0.2672612419124244,
+    "sims": [
+     0.2672612419124244
+    ]
+   },
+   "μ": {
+    "r_rate": 0.0,
+    "refs": 0,
+    "t_rate": 0.023255813953488372,
+    "transitions": 1
+   },
+   "ρᵣ": {
+    "content": 20,
+    "stop": 22
+   }
+  },
+  "evidence": {
+   "adjacent_cosine_mean": 0.2672612419124244,
+   "bullet_line_count": 0,
+   "collapse_subtype": "none",
+   "constraint_basis": "none",
+   "content_word_count": 20,
+   "contrast_basis": "none",
+   "contrast_marker_hits": 0,
+   "contrast_per_100_tokens": 0.0,
+   "ds_per_100_tokens": 4.651,
+   "math_expression_tail_flag": false,
+   "metaphor_hits": 0,
+   "paragraph_count": 1,
+   "punctuation_clause_markers": 1,
+   "reference_pronouns_count": 0,
+   "rhetorical_state": "assertive",
+   "seg_basis": "punct",
+   "segmentation_reliable": true,
+   "sentence_count": 2,
+   "stopword_count": 22,
+   "subordinator_hits": 1,
+   "subordinators_per_100_tokens": 2.326,
+   "tail_incomplete_flag": false,
+   "technical_hits": 0,
+   "tiktoken_token_count": 49,
+   "token_count": 43,
+   "transitions_count": 1
+  },
+  "flags": [
+   "short_sentence_count"
+  ],
+  "kernel": {
+   "rᵥ": 0.42392840857273145,
+   "Δx": 0.10000000000000009,
+   "μ": 0.5090106522614357,
+   "ρᵣ": 0.46511627906976744
+  },
+  "meta": {
+   "kernel_version": "lang-kernel-rebuild-v19",
+   "length_norm_factor": {
+    "avg_sentence_length": 21.5,
+    "bpe_to_word_ratio": 1.14,
+    "effective_token_count": 43,
+    "sentence_count": 2,
+    "tiktoken_token_count": 49
+   },
+   "numbers_off": false,
+   "positioning": "observational structural telemetry; all geometric language refers to induced structure in feature space only",
+   "prompt": "do you have to identify yourself to a police officer in pennsylvania",
+   "prompt_family_id": null,
+   "tiktoken_encoding": "cl100k_base",
+   "tiktoken_version": "0.14.0"
+  },
+  "z": null
+ },
+ "synthetic-0": {
+  "aux": {
+   "dₛ": 0.0,
+   "xₚ": 0.0,
+   "Δy": 0.0,
+   "θ": 0.0
+  },
+  "basin": "B0_centered_compact",
+  "basin_raw": "B0_centered_compact",
+  "basin_z": null,
+  "detail": {
+   "dₛ": {
+    "punct": 0,
+    "raw": 0.0,
+    "subs": 0
+   },
+   "rᵥ": {
+    "avg_sent_len": 0.0,
+    "bullets": 0,
+    "paragraphs": 0,
+    "short_prop": 0.0
+   },
+   "xₚ": {
+    "met": 0,
+    "met_rate": 0.0,
+    "rare_ratio": 0.0,
+    "rare_words": 0,
+    "tech": 0
+   },
+   "Δx": {
+    "centroid": 0.5,
+    "weights": [
+     1.0
+    ]
+   },
+   "Δy": {
+    "avg_sent_len": 0.0,
+    "segmentation_strain": 0.0
+   },
+   "θ": {
+    "adj_cos_mean": 1.0,
+    "sims": []
+   },
+   "μ": {
+    "refs": 0,
+    "transitions": 0
+   },
+   "ρᵣ": {
+    "content": 0,
+    "stop": 0
+   }
+  },
+  "evidence": {
+   "adjacent_cosine_mean": 1.0,
+   "bullet_line_count": 0,
+   "collapse_subtype": "severe",
+   "constraint_basis": "severe",
+   "content_word_count": 0,
+   "contrast_basis": "none",
+   "contrast_marker_hits": 0,
+   "contrast_per_100_tokens": 0.0,
+   "ds_per_100_tokens": 0.0,
+   "math_expression_tail_flag": false,
+   "metaphor_hits": 0,
+   "paragraph_count": 0,
+   "punctuation_clause_markers": 0,
+   "reference_pronouns_count": 0,
+   "rhetorical_state": "formatting_collapse",
+   "seg_basis": "none",
+   "segmentation_reliable": true,
+   "sentence_count": 0,
+   "stopword_count": 0,
+   "subordinator_hits": 0,
+   "subordinators_per_100_tokens": 0.0,
+   "tail_incomplete_flag": false,
+   "technical_hits": 0,
+   "tiktoken_token_count": 0,
+   "token_count": 0,
+   "transitions_count": 0
+  },
+  "flags": [
+   "empty_text",
+   "low_token_count",
+   "short_sentence_count"
+  ],
+  "kernel": {
+   "rᵥ": 0.0,
+   "Δx": 0.0,
+   "μ": 0.0,
+   "ρᵣ": 0.0
+  },
+  "meta": {
+   "kernel_version": "lang-kernel-rebuild-v19",
+   "length_norm_factor": {
+    "avg_sentence_length": 0.0,
+    "bpe_to_word_ratio": null,
+    "effective_token_count": 0,
+    "sentence_count": 0,
+    "tiktoken_token_count": 0
+   },
+   "numbers_off": false,
+   "positioning": "observational structural telemetry; all geometric language refers to induced structure in feature space only",
+   "prompt": null,
+   "prompt_family_id": null,
+   "tiktoken_encoding": "cl100k_base",
+   "tiktoken_version": "0.14.0"
+  },
+  "z": null
+ },
+ "synthetic-1": {
+  "aux": {
+   "dₛ": 0.0,
+   "xₚ": 0.31647910626368436,
+   "Δy": -0.9333333333333333,
+   "θ": 0.0
+  },
+  "basin": "B3_high_void_or_high_displacement",
+  "basin_raw": "B3_high_void_or_high_displacement",
+  "basin_z": null,
+  "detail": {
+   "dₛ": {
+    "punct": 0,
+    "raw": 0.0,
+    "subs": 0
+   },
+   "rᵥ": {
+    "avg_sent_len": 1.0,
+    "bullet_norm": 0.0,
+    "bullets": 0,
+    "inv_len_norm": 1.0,
+    "para_norm": 1.0,
+    "paragraphs": 1,
+    "short_norm": 1.0,
+    "short_prop": 1.0
+   },
+   "xₚ": {
+    "met": 0,
+    "met_rate": 0.0,
+    "rare_ratio": 0.0,
+    "rare_words": 0,
+    "tech": 0
+   },
+   "Δx": {
+    "centroid": 0.5,
+    "weights": [
+     1.0
+    ]
+   },
+   "Δy": {
+    "avg_sent_len": 1.0,
+    "segmentation_strain": -0.9333
+   },
+   "θ": {
+    "adj_cos_mean": 1.0,
+    "sims": []
+   },
+   "μ": {
+    "r_rate": 0.0,
+    "refs": 0,
+    "t_rate": 0.0,
+    "transitions": 0
+   },
+   "ρᵣ": {
+    "content": 0,
+    "stop": 0
+   }
+  },
+  "evidence": {
+   "adjacent_cosine_mean": 1.0,
+   "bullet_line_count": 0,
+   "collapse_subtype": "severe",
+   "constraint_basis": "severe",
+   "content_word_count": 0,
+   "contrast_basis": "none",
+   "contrast_marker_hits": 0,
+   "contrast_per_100_tokens": 0.0,
+   "ds_per_100_tokens": 0.0,
+   "math_expression_tail_flag": false,
+   "metaphor_hits": 0,
+   "paragraph_count": 1,
+   "punctuation_clause_markers": 0,
+   "reference_pronouns_count": 0,
+   "rhetorical_state": "formatting_collapse",
+   "seg_basis": "punct",
+   "segmentation_reliable": true,
+   "sentence_count": 1,
+   "stopword_count": 0,
+   "subordinator_hits": 0,
+   "subordinators_per_100_tokens": 0.0,
+   "tail_incomplete_flag": false,
+   "technical_hits": 0,
+   "tiktoken_token_count": 2,
+   "token_count": 1,
+   "transitions_count": 0
+  },
+  "flags": [
+   "low_token_count",
+   "short_sentence_count"
+  ],
+  "kernel": {
+   "rᵥ": 0.75,
+   "Δx": 0.0,
+   "μ": 0.46257015465625045,
+   "ρᵣ": 0.0
+  },
+  "meta": {
+   "kernel_version": "lang-kernel-rebuild-v19",
+   "length_norm_factor": {
+    "avg_sentence_length": 1.0,
+    "bpe_to_word_ratio": 2.0,
+    "effective_token_count": 1,
+    "sentence_count": 1,
+    "tiktoken_token_count": 2
+   },
+   "numbers_off": false,
+   "positioning": "observational structural telemetry; all geometric language refers to induced structure in feature space only",
+   "prompt": null,
+   "prompt_family_id": null,
+   "tiktoken_encoding": "cl100k_base",
+   "tiktoken_version": "0.14.0"
+  },
+  "z": null
+ },
+ "synthetic-2": {
+  "aux": {
+   "dₛ": 0.0,
+   "xₚ": 0.31647910626368436,
+   "Δy": -0.9333333333333333,
+   "θ": 1.0
+  },
+  "basin": "B3_high_void_or_high_displacement",
+  "basin_raw": "B3_high_void_or_high_displacement",
+  "basin_z": null,
+  "detail": {
+   "dₛ": {
+    "punct": 0,
+    "raw": 0.0,
+    "subs": 0
+   },
+   "rᵥ": {
+    "avg_sent_len": 1.0,
+    "bullet_norm": 1.0,
+    "bullets": 3,
+    "inv_len_norm": 1.0,
+    "para_norm": 1.0,
+    "paragraphs": 1,
+    "short_norm": 1.0,
+    "short_prop": 1.0
+   },
+   "xₚ": {
+    "met": 0,
+    "met_rate": 0.0,
+    "rare_ratio": 0.0,
+    "rare_words": 0,
+    "tech": 0
+   },
+   "Δx": {
+    "centroid": 1.0,
+    "weights": [
+     0.0,
+     0.0,
+     1.0
+    ]
+   },
+   "Δy": {
+    "avg_sent_len": 1.0,
+    "segmentation_strain": -0.9333
+   },
+   "θ": {
+    "adj_cos_mean": 0.0,
+    "sims": [
+     0.0,
+     0.0
+    ]
+   },
+   "μ": {
+    "r_rate": 0.0,
+    "refs": 0,
+    "t_rate": 0.0,
+    "transitions": 0
+   },
+   "ρᵣ": {
+    "content": 1,
+    "stop": 0
+   }
+  },
+  "evidence": {
+   "adjacent_cosine_mean": 0.0,
+   "bullet_line_count": 3,
+   "collapse_subtype": "severe",
+   "constraint_basis": "severe",
+   "content_word_count": 1,
+   "contrast_basis": "none",
+   "contrast_marker_hits": 0,
+   "contrast_per_100_tokens": 0.0,
+   "ds_per_100_tokens": 0.0,
+   "math_expression_tail_flag": false,
+   "metaphor_hits": 0,
+   "paragraph_count": 1,
+   "punctuation_clause_markers": 0,
+   "reference_pronouns_count": 0,
+   "rhetorical_state": "formatting_collapse",
+   "seg_basis": "newline",
+   "segmentation_reliable": true,
+   "sentence_count": 3,
+   "stopword_count": 0,
+   "subordinator_hits": 0,
+   "subordinators_per_100_tokens": 0.0,
+   "tail_incomplete_flag": false,
+   "technical_hits": 0,
+   "tiktoken_token_count": 8,
+   "token_count": 3,
+   "transitions_count": 0
+  },
+  "flags": [
+   "low_token_count",
+   "short_sentence_count"
+  ],
+  "kernel": {
+   "rᵥ": 1.0,
+   "Δx": 0.5,
+   "μ": 0.46257015465625045,
+   "ρᵣ": 0.3333333333333333
+  },
+  "meta": {
+   "kernel_version": "lang-kernel-rebuild-v19",
+   "length_norm_factor": {
+    "avg_sentence_length": 1.0,
+    "bpe_to_word_ratio": 2.667,
+    "effective_token_count": 3,
+    "sentence_count": 3,
+    "tiktoken_token_count": 8
+   },
+   "numbers_off": false,
+   "positioning": "observational structural telemetry; all geometric language refers to induced structure in feature space only",
+   "prompt": null,
+   "prompt_family_id": null,
+   "tiktoken_encoding": "cl100k_base",
+   "tiktoken_version": "0.14.0"
+  },
+  "z": null
+ },
+ "synthetic-3": {
+  "aux": {
+   "dₛ": 1.0,
+   "xₚ": 0.375019894670121,
+   "Δy": -0.4,
+   "θ": 0.8322949016875157
+  },
+  "basin": "B3_high_void_or_high_displacement",
+  "basin_raw": "B3_high_void_or_high_displacement",
+  "basin_z": null,
+  "detail": {
+   "dₛ": {
+    "punct": 9,
+    "raw": 0.3333333333333333,
+    "subs": 0
+   },
+   "rᵥ": {
+    "avg_sent_len": 9.0,
+    "bullet_norm": 0.0,
+    "bullets": 0,
+    "inv_len_norm": 0.9411764705882353,
+    "para_norm": 0.9259259259259258,
+    "paragraphs": 1,
+    "short_norm": 1.0,
+    "short_prop": 0.6666666666666666
+   },
+   "xₚ": {
+    "met": 0,
+    "met_rate": 0.0,
+    "rare_ratio": 0.0741,
+    "rare_words": 2,
+    "tech": 0
+   },
+   "Δx": {
+    "centroid": 0.5335365853658537,
+    "weights": [
+     0.6,
+     0.5,
+     0.7222222222222222
+    ]
+   },
+   "Δy": {
+    "avg_sent_len": 9.0,
+    "segmentation_strain": -0.4
+   },
+   "θ": {
+    "adj_cos_mean": 0.16770509831248423,
+    "sims": [
+     0.22360679774997896,
+     0.11180339887498948
+    ]
+   },
+   "μ": {
+    "r_rate": 0.07407407407407407,
+    "refs": 2,
+    "t_rate": 0.0,
+    "transitions": 0
+   },
+   "ρᵣ": {
+    "content": 18,
+    "stop": 8
+   }
+  },
+  "evidence": {
+   "adjacent_cosine_mean": 0.16770509831248423,
+   "bullet_line_count": 0,
+   "collapse_subtype": "none",
+   "constraint_basis": "none",
+   "content_word_count": 18,
+   "contrast_basis": "token",
+   "contrast_marker_hits": 1,
+   "contrast_per_100_tokens": 3.704,
+   "ds_per_100_tokens": 33.333,
+   "math_expression_tail_flag": false,
+   "metaphor_hits": 0,
+   "paragraph_count": 1,
+   "punctuation_clause_markers": 9,
+   "reference_pronouns_count": 2,
+   "rhetorical_state": "assertive",
+   "seg_basis": "punct",
+   "segmentation_reliable": true,
+   "sentence_count": 3,
+   "stopword_count": 8,
+   "subordinator_hits": 0,
+   "subordinators_per_100_tokens": 0.0,
+   "tail_incomplete_flag": false,
+   "technical_hits": 0,
+   "tiktoken_token_count": 40,
+   "token_count": 27,
+   "transitions_count": 0
+  },
+  "flags": [
+   "short_sentence_count"
+  ],
+  "kernel": {
+   "rᵥ": 0.7160130718954247,
+   "Δx": 0.03353658536585369,
+   "μ": 0.5365089816761752,
+   "ρᵣ": 0.6666666666666666
+  },
+  "meta": {
+   "kernel_version": "lang-kernel-rebuild-v19",
+   "length_norm_factor": {
+    "avg_sentence_length": 9.0,
+    "bpe_to_word_ratio": 1.481,
+    "effective_token_count": 27,
+    "sentence_count": 3,
+    "tiktoken_token_count": 40
+   },
+   "numbers_off": false,
+   "positioning": "observational structural telemetry; all geometric language refers to induced structure in feature space only",
+   "prompt": null,
+   "prompt_family_id": null,
+   "tiktoken_encoding": "cl100k_base",
+   "tiktoken_version": "0.14.0"
+  },
+  "z": null
+ },
+ "synthetic-4": {
+  "aux": {
+   "dₛ": 0.9259259259259259,
+   "xₚ": 0.40585893855292676,
+   "Δy": -0.4,
+   "θ": 0.0
+  },
+  "basin": "B3_high_void_or_high_displacement",
+  "basin_raw": "B3_high_void_or_high_displacement",
+  "basin_z": null,
+  "detail": {
+   "dₛ": {
+    "punct": 1,
+    "raw": 0.1111111111111111,
+    "subs": 0
+   },
+   "rᵥ": {
+    "avg_sent_len": 9.0,
+    "bullet_norm": 0.0,
+    "bullets": 0,
+    "inv_len_norm": 0.9411764705882353,
+    "para_norm": 1.0,
+    "paragraphs": 2,
+    "short_norm": 1.0,
+    "short_prop": 1.0
+   },
+   "xₚ": {
+    "met": 0,
+    "met_rate": 0.0,
+    "rare_ratio": 0.1111,
+    "rare_words": 1,
+    "tech": 0
+   },
+   "Δx": {
+    "centroid": 0.5,
+    "weights": [
+     1.0
+    ]
+   },
+   "Δy": {
+    "avg_sent_len": 9.0,
+    "segmentation_strain": -0.4
+   },
+   "θ": {
+    "adj_cos_mean": 1.0,
+    "sims": []
+   },
+   "μ": {
+    "r_rate": 0.1111111111111111,
+    "refs": 1,
+    "t_rate": 0.0,
+    "transitions": 0
+   },
+   "ρᵣ": {
+    "content": 2,
+    "stop": 1
+   }
+  },
+  "evidence": {
+   "adjacent_cosine_mean": 1.0,
+   "bullet_line_count": 0,
+   "collapse_subtype": "severe",
+   "constraint_basis": "severe",
+   "content_word_count": 2,
+   "contrast_basis": "none",
+   "contrast_marker_hits": 0,
+   "contrast_per_100_tokens": 0.0,
+   "ds_per_100_tokens": 11.111,
+   "math_expression_tail_flag": false,
+   "metaphor_hits": 0,
+   "paragraph_count": 2,
+   "punctuation_clause_markers": 1,
+   "reference_pronouns_count": 1,
+   "rhetorical_state": "formatting_collapse",
+   "seg_basis": "both",
+   "segmentation_reliable": true,
+   "sentence_count": 1,
+   "stopword_count": 1,
+   "subordinator_hits": 0,
+   "subordinators_per_100_tokens": 0.0,
+   "tail_incomplete_flag": false,
+   "technical_hits": 0,
+   "tiktoken_token_count": 14,
+   "token_count": 9,
+   "transitions_count": 0
+  },
+  "flags": [
+   "low_token_count",
+   "short_sentence_count"
+  ],
+  "kernel": {
+   "rᵥ": 0.7382352941176471,
+   "Δx": 0.0,
+   "μ": 0.573083856674093,
+   "ρᵣ": 0.2222222222222222
+  },
+  "meta": {
+   "kernel_version": "lang-kernel-rebuild-v19",
+   "length_norm_factor": {
+    "avg_sentence_length": 9.0,
+    "bpe_to_word_ratio": 1.556,
+    "effective_token_count": 9,
+    "sentence_count": 1,
+    "tiktoken_token_count": 14
+   },
+   "numbers_off": false,
+   "positioning": "observational structural telemetry; all geometric language refers to induced structure in feature space only",
+   "prompt": null,
+   "prompt_family_id": null,
+   "tiktoken_encoding": "cl100k_base",
+   "tiktoken_version": "0.14.0"
+  },
+  "z": null
+ },
+ "synthetic-5": {
+  "aux": {
+   "dₛ": 0.0,
+   "xₚ": 0.31647910626368436,
+   "Δy": -0.4,
+   "θ": 0.0
+  },
+  "basin": "B3_high_void_or_high_displacement",
+  "basin_raw": "B3_high_void_or_high_displacement",
+  "basin_z": null,
+  "detail": {
+   "dₛ": {
+    "punct": 0,
+    "raw": 0.0,
+    "subs": 0
+   },
+   "rᵥ": {
+    "avg_sent_len": 9.0,
+    "bullet_norm": 0.0,
+    "bullets": 0,
+    "inv_len_norm": 0.9411764705882353,
+    "para_norm": 1.0,
+    "paragraphs": 1,
+    "short_norm": 1.0,
+    "short_prop": 1.0
+   },
+   "xₚ": {
+    "met": 0,
+    "met_rate": 0.0,
+    "rare_ratio": 0.0,
+    "rare_words": 0,
+    "tech": 0
+   },
+   "Δx": {
+    "centroid": 0.5,
+    "weights": [
+     1.0
+    ]
+   },
+   "Δy": {
+    "avg_sent_len": 9.0,
+    "segmentation_strain": -0.4
+   },
+   "θ": {
+    "adj_cos_mean": 1.0,
+    "sims": []
+   },
+   "μ": {
+    "r_rate": 0.1111111111111111,
+    "refs": 1,
+    "t_rate": 0.0,
+    "transitions": 0
+   },
+   "ρᵣ": {
+    "content": 2,
+    "stop": 6
+   }
+  },
+  "evidence": {
+   "adjacent_cosine_mean": 1.0,
+   "bullet_line_count": 0,
+   "collapse_subtype": "severe",
+   "constraint_basis": "severe",
+   "content_word_count": 2,
+   "contrast_basis": "none",
+   "contrast_marker_hits": 0,
+   "contrast_per_100_tokens": 0.0,
+   "ds_per_100_tokens": 0.0,
+   "math_expression_tail_flag": false,
+   "metaphor_hits": 0,
+   "paragraph_count": 1,
+   "punctuation_clause_markers": 0,
+   "reference_pronouns_count": 1,
+   "rhetorical_state": "formatting_collapse",
+   "seg_basis": "none",
+   "segmentation_reliable": true,
+   "sentence_count": 1,
+   "stopword_count": 6,
+   "subordinator_hits": 0,
+   "subordinators_per_100_tokens": 0.0,
+   "tail_incomplete_flag": true,
+   "technical_hits": 0,
+   "tiktoken_token_count": 10,
+   "token_count": 9,
+   "transitions_count": 0
+  },
+  "flags": [
+   "low_token_count",
+   "short_sentence_count"
+  ],
+  "kernel": {
+   "rᵥ": 0.7382352941176471,
+   "Δx": 0.0,
+   "μ": 0.573083856674093,
+   "ρᵣ": 0.2222222222222222
+  },
+  "meta": {
+   "kernel_version": "lang-kernel-rebuild-v19",
+   "length_norm_factor": {
+    "avg_sentence_length": 9.0,
+    "bpe_to_word_ratio": 1.111,
+    "effective_token_count": 9,
+    "sentence_count": 1,
+    "tiktoken_token_count": 10
+   },
+   "numbers_off": false,
+   "positioning": "observational structural telemetry; all geometric language refers to induced structure in feature space only",
+   "prompt": null,
+   "prompt_family_id": null,
+   "tiktoken_encoding": "cl100k_base",
+   "tiktoken_version": "0.14.0"
+  },
+  "z": null
+ }
+}

@@ -1,0 +1,49 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "linguistic-kernel"
+version = "0.1.0"
+description = "Deterministic structural measurement of text: where a response puts its weight, how it breathes, how it holds together. No model in the loop."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Russell Parrish", email = "russellgparrish@gmail.com" }]
+requires-python = ">=3.9"
+keywords = ["llm", "evaluation", "telemetry", "text analysis", "deterministic", "structure", "drift"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Science/Research",
+  "Intended Audience :: Developers",
+  "Topic :: Text Processing :: Linguistic",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+  "Programming Language :: Python :: 3",
+]
+dependencies = ["numpy>=1.23", "pandas>=1.5"]
+
+[project.optional-dependencies]
+tokens = ["tiktoken>=0.5"]
+dev = ["pytest>=7", "ruff", "tiktoken>=0.5"]
+
+[project.scripts]
+lk = "lingkernel.cli:main"
+
+[project.urls]
+Homepage = "https://www.parallaxmetrology.com/linguistic_kernel_pm.html"
+Demo = "https://parallaxmetrology.github.io/linguistic-kernel/"
+Source = "https://github.com/parallaxmetrology/linguistic-kernel"
+Issues = "https://github.com/parallaxmetrology/linguistic-kernel/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/lingkernel"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 120
+extend-exclude = ["src/lingkernel/_v19.py"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W"]
