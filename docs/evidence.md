@@ -29,4 +29,8 @@ The kernel has been run on three corpora: **EMS** (Claude, GPT and Gemini on the
 - **Prompt echo.** 219 of 1,600 operating-window answers restate the prompt, which moves μ and others. Strip echoed prompts if you're comparing answers.
 - **English word lists.** Stopwords, common words, transitions and subordinators are English. Other languages will read strangely.
 - **Older readings.** `x_p` from versions before v17 isn't comparable with v19 (it changed definition, and an earlier version stored values that don't match v19's). Compare within one `kernel_version`.
+- **Markdown reads as run-on text.** Code blocks and tables are read as one long sentence (Δy and dₛ inflate, rᵥ collapses for tables), and header lines glue onto the next sentence. Use `lingkernel.read`, which measures a markdown-neutralised copy alongside the raw text ([reading-frame.md](reading-frame.md)).
+- **θ = 0 means one segment, not perfect flow.** v19 returns θ = 0 for any text it reads as a single sentence: lists without bullet markers, or a numbered list run onto one line. 1.4% of eligible HelpSteer2 answers land there.
+- **The tail check fires on some complete sentences.** `tail_incomplete_flag` treats a final "that", "what", "to", "for" as an open ending even after a full stop ("I can't help with that."). `lingkernel.read` checks closing punctuation before calling a short answer cut.
+- **Literal special tokens raise an error.** With tiktoken installed, a text containing `<|endoftext|>` makes v19's token count raise. `lingkernel.read` catches it and marks the text ineligible (`kernel_error`); 6 of 59,358 Arena answers.
 - **Token counts need tiktoken.** `tiktoken_token_count` is −1 unless `tiktoken` is installed. The first use downloads the `cl100k_base` vocabulary.
