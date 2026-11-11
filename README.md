@@ -2,7 +2,7 @@
 
 **Text has shape. Measure it.**
 
-A deterministic instrument for the *structure* of text, especially model output: where a response puts its weight, how much it breathes, how packed and how cohesive it is, how its sentences run. Every number is a count over the text itself. No model in the loop, no judge, no embeddings: same text, same numbers, on any machine.
+A deterministic instrument for the *structure* of text, especially model output: where a response puts its weight, how much it breathes, how packed and how cohesive it is, how its sentences run. Every number is a count over the text itself. The kernel contains no model, no judge and no embeddings: same text, same numbers, on any machine.
 
 It doesn't judge whether an answer is right, safe or good. Two equally correct answers can sit far apart, and that's the point: it measures *how* something was said, so prompts, models and conversations can be compared on evidence instead of vibes.
 
@@ -28,7 +28,11 @@ r["delta_x"], r["r_v"], r["mu"], r["rhetorical_state"]
 
 df = lingkernel.measure_many("outputs.jsonl")      # .jsonl/.json/.csv/.txt, or folders
 lingkernel.fingerprint(df)                          # how a set occupies structural space
+
+lingkernel.read(chat_answer)                        # raw + markdown-framed readings, eligibility
 ```
+
+For chat and benchmark answers (markdown, short replies, other languages), use `lingkernel.read`: it measures the text as given and with markdown neutralised, and flags what v19 shouldn't be trusted on. See [docs/reading-frame.md](docs/reading-frame.md).
 
 ```bash
 lk measure "some text"                              # JSON for one text
@@ -62,6 +66,7 @@ From three corpora (Claude, GPT and Gemini on the same 400 prompts; 1,600 Gemini
 - **Shape and length together tell engines apart** better than either alone: 82% of pairings, against 67% for shape and 65% for length (leave-one-prompt-out). Claude is easy to spot; GPT vs Gemini is close to a coin flip with a lean (62%).
 - **The collapse detector catches truncations** on its home corpus: all 36 human-confirmed truncations, with 2 false alarms. A length-only rule catches 12. Out-of-sample, it's untested.
 - **Clause thickness (`dₛ`) tracks generation-level uncertainty** (r = 0.36 after controlling for length and prompt family).
+- **What raters reward beyond length.** Read against four public preference corpora (HelpSteer2, AlpacaEval, MT-Bench, Chatbot Arena), with small logistic weights fitted on top of the fixed kernel: human raters reward denser, more clause-rich answers and penalise repetition, until both answers already carry the 2024 style; the open reward models used to train some of those models keep rewarding it there (+0.24 to +0.42 against voters' +0.00), also beyond Arena's own style-control features. Paper, frozen plans, scripts and derived data: [Structure Beyond Length](https://github.com/parallaxmetrology/structure-beyond-length).
 
 Several earlier readings are still **open**: not yet established, and some may need adjusting. They include which axis carries most of the movement, whether μ works as a stability control, and whether kernel distance beats word count as a general anomaly score. The details, and the known sharp edges, are in [docs/evidence.md](docs/evidence.md).
 

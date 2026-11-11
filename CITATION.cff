@@ -6,8 +6,8 @@ authors:
   - family-names: Parrish
     given-names: Russell
     orcid: https://orcid.org/0009-0008-9781-7995
-version: "0.1.0"
-date-released: 2026-10-21
+version: "0.2.0"
+date-released: 2026-11-11
 license: MIT
 url: https://www.parallaxmetrology.com/linguistic_kernel_pm.html
 repository-code: https://github.com/parallaxmetrology/linguistic-kernel

@@ -4,8 +4,8 @@ build-backend = "hatchling.build"
 
 [project]
 name = "linguistic-kernel"
-version = "0.1.0"
-description = "Deterministic structural measurement of text: where a response puts its weight, how it breathes, how it holds together. No model in the loop."
+version = "0.2.0"
+description = "Deterministic structural measurement of text: where a response puts its weight, how it breathes, how it holds together. No model inside the kernel."
 readme = "README.md"
 license = "MIT"
 license-files = ["LICENSE"]

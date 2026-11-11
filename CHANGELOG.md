@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.2.0 — 2026-11-11
+
+- `lingkernel.read` / `read_row` / `frame_text`: the reading frame (r1.1) for chat-style text. Measures every text raw and with markdown neutralised (code blocks, tables, header and bold-only title lines, link URLs), adds English/length eligibility, restates v19's collapse tiers for chat corpora, and catches texts v19 cannot read. No kernel number changes; plain text reads identically. See docs/reading-frame.md.
+- docs/evidence.md: four more known sharp edges (markdown, θ = 0, the tail check on complete sentences, literal special tokens).
+- Evidence from "Structure Beyond Length", which used this frame on four public preference corpora.
+
 ## 0.1.0 — 2026-10-21
 
 First release as a package, wrapping the frozen kernel v19 (`lang-kernel-rebuild-v19`).
